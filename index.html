@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 </head>
 
 
@@ -39,7 +41,7 @@
                         <img src="images/LOGO.png" id="logo-img">
                     </a>
                     <span class="col-sm-8">
-                        <input type="text" placeholder="Search" id="search-bar">
+                        <input type="text" placeholder="Search Products and Brands" id="search-bar">
                         <button type="button" class="text-light" id="search-button"><img src="images/search.webp" style="height:25px;">Search</button>
                     </span>
                 </nav>
@@ -55,6 +57,7 @@
                 <span id="user-icon">Sign In<img src="images/user-1.png"></span>
             </div>
             <div class="col-sm-1"></div>
+
             
                 
         </nav>   
@@ -63,21 +66,31 @@
         </div>
     </div>
     <!--div row for second row - consisting side bar and slider -->
-    <div class="row bg-secondary">
+    <div class="row" id="main-body">
         
         <!--div for side bar-->
-        <div class="col-sm-3 bg-light">
-            <p>first layout</p>
+        <div class="col-sm-2 bg-light" id="sidenav">
+            <p id="trending-categories">
+                <ul style="list-style:none">Top Categories
+                    <li id="menscat">Men's Fashion</li>
+                    <li id="womenscat">Women's Fashion</li>
+                    <li id="homecat">Home & Kitchen</li>
+                    <li id="kidscat">Toys, Kid's Fashion & more</li>
+                    <li id="health">Beauty, Health & Daily Needs</li>
+                </ul>
+            </p>
         </div>
         <!--div for slider and main body on hp-->
-        <div class="col-sm-9 bg-light">
+        <div class="col-sm-9 bg-light" id="sliders">
             <p>first layout</p>
         </div>
 
     </div>
-    <!--div row for download snapdeal app part-->
-    <div class="row bg-secondary"></div>
-    <p>first layout</p>
+    <!--div row for download snapdeal adbvertisement part-->
+    <div class="row bg-secondary">
+        <p>first layout</p>
+    </div>
+    
     <!--div row for footer-->
     <div class="row bg-secondary">
         <p>first layout</p>

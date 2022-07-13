@@ -106,3 +106,33 @@
 #sign-in{
     margin-right: px;
 }
+#trending-categories{
+    list-style: none;
+}
+#main-body{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#sidenav{
+    background-color: #ffffff;
+    margin-left: 50px;
+    margin-right: 20px;
+    overflow: hidden;
+    box-shadow: 4px 3px 8px 1px gainsboro;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-size: 12px;
+    color: #666666;
+
+
+
+}
+body{
+    background-color: #f0f0f0;
+    display:inline-block
+}
+#sidenav p ul{
+    text-align: left;
+}
