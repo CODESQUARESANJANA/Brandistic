@@ -1,5 +1,5 @@
-var s = document.getElementById("sign-in");
+var s = document.getElementById("trending-categories");
 
-function context_menu(){
-
+function display_mens_subcategories(){
+        
 }
