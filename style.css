@@ -126,8 +126,6 @@
 }
 #sidenav{
     background-color: #ffffff;
-    margin-left: 50px;
-    margin-right: 20px;
     overflow: hidden;
     box-shadow: 4px 3px 8px 1px gainsboro;
     text-overflow: ellipsis;
@@ -139,6 +137,6 @@ body{
     background-color: #f0f0f0;
     display:inline-block
 }
-#sidenav p ul{
+#sidenav ul{
     text-align: left;
 }

@@ -158,7 +158,7 @@ const Product_data = [
         product_color: "Black",
         product_size: "S,M,L,XL",
         recentrly_view: false,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -192,7 +192,7 @@ const Product_data = [
         product_color: "Maroon",
         product_size: "S,M,L,XL",
         recentrly_view: false,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -226,7 +226,7 @@ const Product_data = [
         product_color: "Strip Blue",
         product_size: "S,M,L,XL",
         recentrly_view: true,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -243,7 +243,7 @@ const Product_data = [
         product_color: "Navy Blue",
         product_size: "X,M,L,XL",
         recentrly_view: true,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -260,7 +260,7 @@ const Product_data = [
         product_color: "Black",
         product_size: "X,M,L,XL",
         recentrly_view: false,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -328,7 +328,7 @@ const Product_data = [
         product_color: "black",
         product_size: "28,30,32,34,36",
         recentrly_view: false,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -345,7 +345,7 @@ const Product_data = [
         product_color: "Grey",
         product_size: "30,32,34,36,38",
         recentrly_view: false,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -396,7 +396,7 @@ const Product_data = [
         product_color: "Black",
         product_size: "28,30,32,34,36",
         recentrly_view: false,
-        trending_product: false
+        trending_product: true
     },
     {
         cat_id: "1",
@@ -485,7 +485,7 @@ const Product_data = [
         product_color: "white and black",
         product_size: "6,7,8,9,10",
         recentrly_view: true,
-        trending_product: false
+        trending_product: true
     },
 
 
@@ -561,7 +561,7 @@ const Product_data = [
         product_color: "silver",
         product_size: "6,7,8,9,10",
         recentrly_view: true,
-        trending_product: false
+        trending_product: true
     },
 
     {
@@ -579,7 +579,7 @@ const Product_data = [
         product_color: "blue",
         product_size: "6,7,8,9,10,11",
         recentrly_view: true,
-        trending_product: false
+        trending_product: true
     },
 
     {
