@@ -171,18 +171,19 @@
         #ul_1,
         #ul_2,
         #ul_3 {
-          padding-left: 10px !important;
-          margin-right: 10px !important;
-          margin-top: 10px !important;
+          padding-left: 20px !important;
+          margin-right: 20px !important;
+          margin-top: 20px !important;
         }
       }
 
-      #like_Button{
-        background: transparent;
-        border: none;
-        outline: none;
-        color: white;
+      @media screen and (max-width: 762px){
+        #q_Icon,#a_Icon,#q_Icon2,#a_Icon2{
+          display: none !important;
+        }
       }
+
+
 
     </style>
 
@@ -193,23 +194,12 @@
     ></script>
 
     <script>
-
-      $(document).ready(function(){
-        var btnvar = document.getElementById("like_Button");
-
-function Toggle(){
-  if( btnvar.style.color == "red"){
-    btnvar.style.color = "white";
-  }
-  else{
-    btnvar.style.color = "red";
-  }
-}
-      })
-      
-
+      function question_Alert(){
+        alert("Sorry for in convience! This section is under maintainence, this section will be available in few weeks! Thank you for your patience..");
+      }
     </script>
-  </head>
+  
+</head>
   <body>
     <div class="" style="background-color: #f7f7f7">
       <div class="container" style="padding-top: 50px">
@@ -255,9 +245,7 @@ function Toggle(){
                 </div>
               </div>
 
-              <div class="col-1">
-                <button id="like_Button" class="btn" type="button" onclick="Toggle()"><img style="width: 100%; height: 100%; text-align: center;" src="https://img.icons8.com/ios/50/000000/like--v1.png"/></button>
-              </div>
+              
 
               <div class="row">
                 <div class="col-md-2 col-sm-12">
@@ -324,6 +312,8 @@ function Toggle(){
                   <p style="margin-left: 80px; font-size: 13px; color: gray">
                     (2)Offers Applicable on cart
                   </p>
+            
+
                 </div>
               </div>
               <div class="row">
@@ -375,7 +365,7 @@ function Toggle(){
             </div>
 
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-lg-4">
                 <p
                   style="
                     margin-top: 10%;
@@ -388,7 +378,7 @@ function Toggle(){
                 </p>
               </div>
 
-              <div class="col-md-4 d-flex">
+              <div class="col-md-12 col-lg-4 d-flex">
                 <input
                   type="text"
                   class="form-control"
@@ -401,6 +391,7 @@ function Toggle(){
                     margin-top: 21px;
                     margin-left: 0px;
                     border-style: solid;
+                    position: flex;
                   "
                 />
 
@@ -411,15 +402,16 @@ function Toggle(){
                     background-color: #333;
                     color: white;
                     height: 52%;
-                    margin-top: 9%;
+                    margin-top: 21px;
                     font-size: 80%;
+                    position: flex;
                   "
                 >
                 CHECK
                 </button>
               </div>
 
-              <div class="col-md-4 col-sm-12">
+              <div class="col-md-12 col-lg-4 col-sm-12">
                 <p
                   class="mx-4"
                   style="
@@ -468,7 +460,9 @@ function Toggle(){
       <!--Advertisment Div-->
       <div class="container">
         <div class="row">
-          <div class="col"></div>
+          <div class="col">
+            <p></p>
+          </div>
         </div>
       </div>
 
@@ -487,7 +481,7 @@ function Toggle(){
                     checked="checked"
                   />
                   <div>
-                    <!--Highlights section-->
+                    <!--Specification section-->
                     <div class="row">
                       <div class="col-md-12 col-sm-12">
                         <div class="d-flex">
@@ -609,22 +603,104 @@ function Toggle(){
                   </div>
                 </div>
                 <div class="tab-2">
-                  <label for="tab2-2" style="color: gray">Comments</label>
+                  <label for="tab2-2" style="color: gray">Questions and Answers</label>
                   <input id="tab2-2" name="tabs-two" type="radio" />
                   <div>
-                    <h4>Tab Two</h4>
-                    <p>
-                      Quisque sit amet turpis leo. Maecenas sed dolor mi.
-                      Pellentesque varius elit in neque ornare commodo ac non
-                      tellus. Mauris id iaculis quam. Donec eu felis quam. Morbi
-                      tristique lorem eget iaculis consectetur. Class aptent
-                      taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Aenean at tellus eget risus tempus
-                      ultrices. Nam condimentum nisi enim, scelerisque faucibus
-                      lectus sodales at.
-                    </p>
-                  </div>
+                    <div class="d-flex">
+                      <img
+                        style="width: 30px; height: 30px; margin-top: 5px"
+                        src="images/products_Comments.gif"
+                      />
+                      <p
+                        style="
+                          font-size: 25px;
+                          color: gray;
+                          margin-left: 40px;
+                        "
+                      >
+                        Questions and Answers
+                      </p>
+                    </div>
+
+                      <!--Horizontal line Comments-->
+                      <div class="row">
+                        <div class="col">
+                          <hr style="height: 4px" />
+                        </div>
+                      </div>
+                      
+                      <div class="container p-2" style="background-color: #fafafa; border-radius: 6px;">
+                          <div class="row">
+                            <div class="col-md-5 col-sm-12 col-lg-3">
+                                <p style="color:  #333333; padding-top:7%; font-size: large;">
+                                Have a Question?</p>
+
+                                <p style="color: #999;">Get answers from experts ans customers who have used this item</p>
+                              
+                            </div>
+      
+                            <div class="ask_buttondiv col-md-7 col-sm-12 col-lg-9">
+                              <div style="display: flex; justify-content: center;">
+                                <button onclick="question_Alert()" id="ask_Button" type="button" class="btn ask_Btn" style="border-radius:1px; margin-top:7%; background-color:#333333; color:white; text-align: right;">ASK A QUESTION</button>
+                              </div>
+                            </div>
+                          
+                          </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col">
+                          <p style="color: gray; margin-top: 2%;">Displaying Question 1-5 of </p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img id="q_Icon" style="margin-left: 7%; height: 25%; margin-top: 10%;" src="https://img.icons8.com/ios/50/000000/circled-q.png"/>
+                          <img id="a_Icon" style="margin-left: 7%; height: 25%;" src="https://img.icons8.com/ios/50/000000/circled-a.png"/>
+                        </div>
+
+                        <div class="col-md-11">
+                          <p style="color: #404040; font-size:larger; margin-top: 1%;">How is the performance?</p>
+                          <p style="color: gray;">Please go through the specification section you will find there</p>
+                          <div class="d-flex">
+                            <p style="font-size: small;">by <b style="color: gray;">Liam.Payne.cn</b> on July 10, 2022</p>
+                          </div>
+                          <p style="color: #80d4ff;">View all answers</p>
+                          
+                        </div>
+                      </div>
+
+                       <!--Horizontal line in Q and A section-->
+                       <div class="row">
+                        <div class="col">
+                          <hr style="height: 4px" />
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-1">
+                          <img id="q_Icon2" style="margin-left: 7%; height: 25%; margin-top: 10%;" src="https://img.icons8.com/ios/50/000000/circled-q.png"/>
+                          <img id="a_Icon2" style="margin-left: 7%; height: 25%;" src="https://img.icons8.com/ios/50/000000/circled-a.png"/>
+                        </div>
+
+                        <div class="col-md-11">
+                          <p style="color: #404040; font-size:larger; margin-top: 1%;">What is the display size? and is Display FULL AMOLED?</p>
+                          <p style="color: gray;">For display size please check Specification section and display is FULL HD OLED</p>
+                          <div class="d-flex">
+                            <p style="font-size: small;">by <b style="color: gray;">Owen.James.cn</b> on May 21, 2022</p>
+                          </div>
+                          <p style="color: #80d4ff;">View all answers</p>
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                   
+                  
                 </div>
+
               </div>
             </div>
           </div>
@@ -640,9 +716,12 @@ function Toggle(){
             </div>
           </div>
 
+          
+
           <!--Fo here the specification with the ul and li is removed-->
 
           <!--Ratings and Reviews Section-->
+          
           <div class="container" style="padding: 40px">
             <div class="row">
               <div class="col-md-4 col-sm-12 border">
