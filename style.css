@@ -110,19 +110,23 @@
     padding: 0px;
 }
 #sign-in{
-    margin-right: px;
+    margin-right: 3px;
 }
 #trending-categories{
     list-style: none;
+    font-size: 28px;
+    line-height: 39px;
+    font-style: #666666;
 }
 #main-body{
 
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
+    background-color:#f5f5f5;
 
 }
 #sidenav{
-    background-color: #ffffff;
+    background-color: white;
     margin-left: 50px;
     margin-right: 20px;
     overflow: hidden;
@@ -131,6 +135,7 @@
     display: inline-block;
     font-size: 12px;
     color: #666666;
+    margin-top: 20px;
 }
 body{
     background-color: #f0f0f0;
@@ -138,4 +143,93 @@ body{
 }
 #sidenav p ul{
     text-align: left;
+}
+#side-logo-img{
+    height: 28px;
+    width: 28px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+#trending-searches-side{
+    height: 22px;
+    width: 22px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+#mens-sub-categories{
+    font-style: #666666;
+    font-size: 12px;
+    margin-left: -30px;
+    width: 60%;
+    line-height: 20px;
+    z-index: 1000;
+    height:400px;
+    overflow-y:auto;
+
+} 
+#womens-sub-categories{
+    font-style: #666666;
+    font-size: 12px;
+    margin-left: -30px;
+    width: 60%;
+    line-height: 20px;
+    z-index: 1000;
+    height:400px;
+    overflow-y:auto;
+
+} 
+#kids-sub-categories{
+    font-style: #666666;
+    font-size: 12px;
+    margin-left: -30px;
+    width: 60%;
+    line-height: 20px;
+    z-index: 1000;
+    height:400px;
+    overflow-y:auto;
+
+} 
+#home-sub-categories{
+    font-style: #666666;
+    font-size: 12px;
+    margin-left: -30px;
+    width: 60%;
+    line-height: 20px;
+    z-index: 1000;
+    height:400px;
+    overflow-y:auto;
+
+} 
+#health-sub-categories{
+    font-style: #666666;
+    font-size: 12px;
+    margin-left: -30px;
+    width: 60%;
+    line-height: 20px;
+    z-index: 1000;
+    height:400px;
+    overflow-y:auto;
+
+} 
+
+#middle-div-categories{
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+}
+#bottom-border-ul{
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+.hoverfunc{
+    border-left: 4px solid red;
+    background-color: whitesmoke;
+
+}
+.drpdn-menu{
+    display: none;
+    background-color: #f5f5f5;
+
 }
