@@ -2673,3 +2673,74 @@ const Product_data = [
         trending_product: true
     },
 ]
+
+const footer_data = [
+    {
+        heading: "Online shopping",
+        description:
+            "Mens Footwear / Lehenga / Dresses / Womens Watches / Kurtis / Womens Footwear / Sarees / Casual Shoes / Mens Watches / Womens Casual Shoes / Frocks / Women Suits / Tops & Tunics / Gowns / Watches / Sports & Bicycles / Water Geysers / Men's Sportswear / Kids T-shirts / Kids Watches / Stationery Supplies / Baby Care Products / Copper Water Bottles",
+    },
+    {
+        heading: "Men's Clothing",
+        description:
+            "Shirts / Casual Shirts / Full Sleeves Casual Shirts / Formal Shirts / Full Sleeves Formal Shirts / Regular Fit Formal Shirts / Cotton Shirts / T Shirts / Polo T shirts / V Neck T shirts / Henley T shirts / Printed T shirts / Round Neck T shirts / Hooded Sweatshirts / Jackets / Trousers & Chinos / Low Rise Jeans / Slim Jeans / Kurta Payjama Sets / Dhoti Kurta Sets",
+    },
+
+    {
+        heading: "Women's Clothing",
+        description:
+            " Saree / Designer Saree / Cotton Sarees / Georgette Sarees / Chiffon Sarees / Net Sarees / Anarkali Suits / Kurtis / Leggings & Churidars / Embroidered Lehengas / Black Dresses / Jeggings / Jeans / A Line Skirts / Women's Gowns / Women's Dresses",
+    },
+    {
+        heading: "Mobiles Accessories",
+        description:
+            " Mobile Covers / Leather Mobile Covers / Printed Back Covers / 10000mAh Power Banks / Ambrane Power Banks / Smart Watches / Fitness Bands / Tempered Glass Mobiles Screen Guards / Bluetooth Devices",
+    },
+    {
+        heading: "Watches",
+        description: " Mens Watches / Womens Watches",
+    },
+    {
+        heading: "TVs, Audio & Video",
+        description:
+            " Speakers / Headphones / Earphones / Home Theatre Systems",
+    },
+    {
+        heading: "Home Furnishing",
+        description:
+            " Bed Linen / Bed Sheets / Bath Linen / Mattresses / Curtains / Cushion Covers / Pillows / Carpets / Kids Bedding",
+    },
+    {
+        heading: "Computers & Peripherals:",
+        description: "External Hard Disks / Pen Drives / Memory Cards",
+    },
+    {
+        heading: "Appliances",
+        description: "Fans / Mircowaves / Irons / Trimmers / Hair Dryers",
+    },
+    {
+        heading: "Toys & Games",
+        description:
+            " Soft Toys / Dolls / Musical Toys / Kids Skate Scooters / Electronic Toys / Toddler Toys / Die Cast Vehicle / Ride Ons & Scooters",
+    },
+    {
+        heading: "Home & Kitchen",
+        description:
+            "Home Decor / Paintings / Clocks / Flasks & Thermos / Photo Frames / Tupperware Kitchenware",
+    },
+    {
+        heading: "FMCG Offer - Top Brands",
+        description:
+            " Accu-Chek Health Monitoring Devices / Nutraj - California Walnuts / Park Avenue / Gillette / KamaSutra",
+    },
+    {
+        heading: "Memory Cards",
+        description:
+            "8 GB Memory Cards / 16 GB Memory Cards / 32 GB Memory Cards / 64 GB Memory Cards",
+    },
+    {
+        heading: "Books",
+        description:
+            " Fiction / Non Fiction / Children & Young Adults / Competitive Exams / School Books / Academic Texts / Reference / Self Help",
+    },
+];

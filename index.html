@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="header.js"></script>
+    <script src="json_data.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -17,76 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script>
-        const footer_data = [
-            {
-                heading: "Online shopping",
-                description:
-                    "Mens Footwear / Lehenga / Dresses / Womens Watches / Kurtis / Womens Footwear / Sarees / Casual Shoes / Mens Watches / Womens Casual Shoes / Frocks / Women Suits / Tops & Tunics / Gowns / Watches / Sports & Bicycles / Water Geysers / Men's Sportswear / Kids T-shirts / Kids Watches / Stationery Supplies / Baby Care Products / Copper Water Bottles",
-            },
-            {
-                heading: "Men's Clothing",
-                description:
-                    "Shirts / Casual Shirts / Full Sleeves Casual Shirts / Formal Shirts / Full Sleeves Formal Shirts / Regular Fit Formal Shirts / Cotton Shirts / T Shirts / Polo T shirts / V Neck T shirts / Henley T shirts / Printed T shirts / Round Neck T shirts / Hooded Sweatshirts / Jackets / Trousers & Chinos / Low Rise Jeans / Slim Jeans / Kurta Payjama Sets / Dhoti Kurta Sets",
-            },
 
-            {
-                heading: "Women's Clothing",
-                description:
-                    " Saree / Designer Saree / Cotton Sarees / Georgette Sarees / Chiffon Sarees / Net Sarees / Anarkali Suits / Kurtis / Leggings & Churidars / Embroidered Lehengas / Black Dresses / Jeggings / Jeans / A Line Skirts / Women's Gowns / Women's Dresses",
-            },
-            {
-                heading: "Mobiles Accessories",
-                description:
-                    " Mobile Covers / Leather Mobile Covers / Printed Back Covers / 10000mAh Power Banks / Ambrane Power Banks / Smart Watches / Fitness Bands / Tempered Glass Mobiles Screen Guards / Bluetooth Devices",
-            },
-            {
-                heading: "Watches",
-                description: " Mens Watches / Womens Watches",
-            },
-            {
-                heading: "TVs, Audio & Video",
-                description:
-                    " Speakers / Headphones / Earphones / Home Theatre Systems",
-            },
-            {
-                heading: "Home Furnishing",
-                description:
-                    " Bed Linen / Bed Sheets / Bath Linen / Mattresses / Curtains / Cushion Covers / Pillows / Carpets / Kids Bedding",
-            },
-            {
-                heading: "Computers & Peripherals:",
-                description: "External Hard Disks / Pen Drives / Memory Cards",
-            },
-            {
-                heading: "Appliances",
-                description: "Fans / Mircowaves / Irons / Trimmers / Hair Dryers",
-            },
-            {
-                heading: "Toys & Games",
-                description:
-                    " Soft Toys / Dolls / Musical Toys / Kids Skate Scooters / Electronic Toys / Toddler Toys / Die Cast Vehicle / Ride Ons & Scooters",
-            },
-            {
-                heading: "Home & Kitchen",
-                description:
-                    "Home Decor / Paintings / Clocks / Flasks & Thermos / Photo Frames / Tupperware Kitchenware",
-            },
-            {
-                heading: "FMCG Offer - Top Brands",
-                description:
-                    " Accu-Chek Health Monitoring Devices / Nutraj - California Walnuts / Park Avenue / Gillette / KamaSutra",
-            },
-            {
-                heading: "Memory Cards",
-                description:
-                    "8 GB Memory Cards / 16 GB Memory Cards / 32 GB Memory Cards / 64 GB Memory Cards",
-            },
-            {
-                heading: "Books",
-                description:
-                    " Fiction / Non Fiction / Children & Young Adults / Competitive Exams / School Books / Academic Texts / Reference / Self Help",
-            },
-        ];
         $(document).ready(function () {
             for (let i = 0; i < footer_data.length; i++) {
                 console.log("dsdsd", footer_data[i]);
@@ -169,8 +101,54 @@
             </p>
         </div>
         <!--div for slider and main body on hp-->
-        <div class="col-sm-9 bg-light" id="sliders">
-            <p>first layout</p>
+        <div class="col-md-9 row">
+            <div class="col-9">
+            <div class="slider_cotent">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active btn slider-btn  btn-primary" aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button" class="btn slider-btn btn-primary"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" class="btn slider-btn btn-primary"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" class="btn slider-btn btn-primary"
+                            data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/image/Health_img.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/Breezy_Dresses_img.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/Festive_kurta_img.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg"
+                                class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon change-icon-arrow" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon change-icon-arrow" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
         </div>
 
     </div>
