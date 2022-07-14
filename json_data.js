@@ -208,7 +208,7 @@ const Product_data = [
         product_discount_percenteage: "55",
         product_color: "grey",
         product_size: "S,M,L,XL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -310,7 +310,7 @@ const Product_data = [
         product_discount_percenteage: "75%",
         product_color: "Blue",
         product_size: "30,32,34,36",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -361,7 +361,7 @@ const Product_data = [
         product_discount_percenteage: "20%",
         product_color: "Blue",
         product_size: "28,30,32,34,36",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -378,7 +378,7 @@ const Product_data = [
         product_discount_percenteage: "47%",
         product_color: "Blue",
         product_size: "28,30,32,34,36",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -412,7 +412,7 @@ const Product_data = [
         product_discount_percenteage: "54%",
         product_color: "Black",
         product_size: "30,32,34,36,38",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -429,7 +429,7 @@ const Product_data = [
         product_discount_percenteage: "35%",
         product_color: "Blue Dark",
         product_size: "28,30,32,34,36",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -668,7 +668,7 @@ const Product_data = [
         product_discount_percenteage: "33%",
         product_color: "BLACK",
         product_size: "S,M,L,XL,XXL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -685,7 +685,7 @@ const Product_data = [
         product_discount_percenteage: "65%",
         product_color: "cream",
         product_size: "S,M,,XL,XXL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -702,7 +702,7 @@ const Product_data = [
         product_discount_percenteage: "62%",
         product_color: "Grey",
         product_size: "S,L,M,XL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -719,7 +719,7 @@ const Product_data = [
         product_discount_percenteage: "",
         product_color: "RED",
         product_size: "",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
 
@@ -738,7 +738,7 @@ const Product_data = [
         product_discount_percenteage: "67%",
         product_color: "MEN BLACK",
         product_size: "S,M,L,XL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -755,7 +755,7 @@ const Product_data = [
         product_discount_percenteage: "63%",
         product_color: "NAVY BLUE",
         product_size: "S,M,L,XL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -772,7 +772,7 @@ const Product_data = [
         product_discount_percenteage: "60%",
         product_color: "MEN BLUE",
         product_size: "S,M,L,XL,XXL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -789,7 +789,7 @@ const Product_data = [
         product_discount_percenteage: "60%",
         product_color: "WHITE",
         product_size: "S,L,XL",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -823,7 +823,7 @@ const Product_data = [
         product_discount_percenteage: "60%",
         product_color: "Black",
         product_size: "onesize",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -840,7 +840,7 @@ const Product_data = [
         product_discount_percenteage: "30%",
         product_color: "light blue",
         product_size: "125ml",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -857,7 +857,7 @@ const Product_data = [
         product_discount_percenteage: "25%",
         product_color: "black",
         product_size: "60-70ML",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -874,7 +874,7 @@ const Product_data = [
         product_discount_percenteage: "20%",
         product_color: "black&white",
         product_size: "onesize",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -891,7 +891,7 @@ const Product_data = [
         product_discount_percenteage: "79%",
         product_color: "navy blue",
         product_size: "onesize",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -908,7 +908,7 @@ const Product_data = [
         product_discount_percenteage: "50%",
         product_color: "brown",
         product_size: "onesize",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -925,7 +925,7 @@ const Product_data = [
         product_discount_percenteage: "45%",
         product_color: "brown",
         product_size: "onesize",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -942,7 +942,7 @@ const Product_data = [
         product_discount_percenteage: "15%",
         product_color: "black",
         product_size: "140ML",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: false
     },
     {
@@ -959,7 +959,7 @@ const Product_data = [
         product_discount_percenteage: "25%",
         product_color: "black&gray",
         product_size: "onesize",
-        recentrly_view: false,
+        recentrly_view: true,
         trending_product: true
     },
     {
@@ -1441,7 +1441,7 @@ const Product_data = [
         product_discount_percenteage: "",
         product_color: "blue",
         product_size: "28",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -1482,18 +1482,18 @@ const Product_data = [
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1181",
-        product_name:"HEALTH FIT Women's Diabetic & Orthopedic Slipper Flip Flop",
-        product_description:"Healthfit diabetic and orthopedic footwear intended to protect and comfort to fit the human foot. Foot Non-binding relaxed fit and maximum protection against pressure points. The premium orthopedic footwear Healthfit has been dedicated to designing the best therapeutic features, and to offer the worlds most comfortable best walking footwear. Healthfit are also engineered to help reduce ball of the foot pain, heel pain, arch pain, knee pain, low back pain, and to enhance comfort for diabetic and orthopedic footwear.MCP Material Used In Foot Bed Product; Used In Heel Pain, Arch Pain, Clow Toes, Corns Diabetic Foot and Other Foot Problem. HEALTH FIT which provides you high style and comfort in this trendy pair. These comfortable, durable and lightweight will become your favourite Footwears.",
-        product_rating:"4.0",
-        product_rating_count:"675",
+        product_name: "HEALTH FIT Women's Diabetic & Orthopedic Slipper Flip Flop",
+        product_description: "Healthfit diabetic and orthopedic footwear intended to protect and comfort to fit the human foot. Foot Non-binding relaxed fit and maximum protection against pressure points. The premium orthopedic footwear Healthfit has been dedicated to designing the best therapeutic features, and to offer the worlds most comfortable best walking footwear. Healthfit are also engineered to help reduce ball of the foot pain, heel pain, arch pain, knee pain, low back pain, and to enhance comfort for diabetic and orthopedic footwear.MCP Material Used In Foot Bed Product; Used In Heel Pain, Arch Pain, Clow Toes, Corns Diabetic Foot and Other Foot Problem. HEALTH FIT which provides you high style and comfort in this trendy pair. These comfortable, durable and lightweight will become your favourite Footwears.",
+        product_rating: "4.0",
+        product_rating_count: "675",
         product_img: "https://m.media-amazon.com/images/I/61KBF9jFhsL._UX695_.jpg",
         product_price: "1799",
         product_discount_price: "799",
         product_discount_percenteage: "56",
-        product_color:"Brown",
-        product_size:"8UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Brown",
+        product_size: "8UK",
+        recentrly_view: false,
+        trending_product: true,
     },
 
 
@@ -1501,155 +1501,155 @@ const Product_data = [
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1182",
-        product_name:"HEALTH FIT Extra Soft Ortho Care Diabetic & Orthopedic Slippers/Doctor Chappal Footwear Women",
-        product_description:"Healthfit diabetic and orthopedic footwear intended to protect and comfort to fit the human foot. Foot Non-binding relaxed fit and maximum protection against pressure points. The premium orthopedic footwear Healthfit has been dedicated to designing the best therapeutic features, and to offer the world’s most comfortable best walking footwear. Healthfit are also engineered to help reduce ball of the foot pain, heel pain, arch pain, knee pain, low back pain, and to enhance comfort for diabetic and orthopedic footwear.MCP Material Used In Foot Bed Product; Used In Heel Pain, Arch Pain, Clow Toes, Corns Diabetic Foot and Other Foot Problem. HEALTH FIT which provides you high style and comfort in this trendy pair. These comfortable, durable and lightweight will become your favourite Footwears.",
-        product_rating:"3.0",
-        product_rating_count:"500",
+        product_name: "HEALTH FIT Extra Soft Ortho Care Diabetic & Orthopedic Slippers/Doctor Chappal Footwear Women",
+        product_description: "Healthfit diabetic and orthopedic footwear intended to protect and comfort to fit the human foot. Foot Non-binding relaxed fit and maximum protection against pressure points. The premium orthopedic footwear Healthfit has been dedicated to designing the best therapeutic features, and to offer the world’s most comfortable best walking footwear. Healthfit are also engineered to help reduce ball of the foot pain, heel pain, arch pain, knee pain, low back pain, and to enhance comfort for diabetic and orthopedic footwear.MCP Material Used In Foot Bed Product; Used In Heel Pain, Arch Pain, Clow Toes, Corns Diabetic Foot and Other Foot Problem. HEALTH FIT which provides you high style and comfort in this trendy pair. These comfortable, durable and lightweight will become your favourite Footwears.",
+        product_rating: "3.0",
+        product_rating_count: "500",
         product_img: "https://m.media-amazon.com/images/I/61DtsEc3wpL._UX695_.jpg",
         product_price: "800",
         product_discount_price: "400",
         product_discount_percenteage: "50",
-        product_color:"Gray",
-        product_size:"7UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Gray",
+        product_size: "7UK",
+        recentrly_view: true,
+        trending_product: true,
     },
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1183",
-        product_name:"Longwalk Women's Soft Ortho Care Diabetic Orthopedic Super Comfort Cushion Slippers for Women's & Girl's Daily Use",
-        product_description:"Exclusive design and durable materials every step feels light and breezy. Breathable, free-moving fabrics which adjust according to your foot and creates an astoundingly easy-going experience.",
-        product_rating:"4.0",
-        product_rating_count:"500",
+        product_name: "Longwalk Women's Soft Ortho Care Diabetic Orthopedic Super Comfort Cushion Slippers for Women's & Girl's Daily Use",
+        product_description: "Exclusive design and durable materials every step feels light and breezy. Breathable, free-moving fabrics which adjust according to your foot and creates an astoundingly easy-going experience.",
+        product_rating: "4.0",
+        product_rating_count: "500",
         product_img: "https://m.media-amazon.com/images/I/51r+4gXrfLL._UY695_.jpg",
         product_price: "1000",
         product_discount_price: "499",
         product_discount_percenteage: "50",
-        product_color:"Orange",
-        product_size:"7UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Orange",
+        product_size: "7UK",
+        recentrly_view: true,
+        trending_product: true,
     },
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1184",
-        product_name:"TRASE Women's Flip-Flops & Slippers | Doctor Ortho Comfort with Style for Women & Girls - Light weight, Soft & Stylish Footwear | Suitable for Knee, Diabetic & Orthopedic Pains",
-        product_description:"Elevate your style with this comfortable pair of Orthopedic Slipper from the house of TRASE brand. Featuring a contemporary refined design with exceptional comfort, this pair is perfect to give your quintessential dressing an upgrade",
-        product_rating:"4.0",
-        product_rating_count:"807",
+        product_name: "TRASE Women's Flip-Flops & Slippers | Doctor Ortho Comfort with Style for Women & Girls - Light weight, Soft & Stylish Footwear | Suitable for Knee, Diabetic & Orthopedic Pains",
+        product_description: "Elevate your style with this comfortable pair of Orthopedic Slipper from the house of TRASE brand. Featuring a contemporary refined design with exceptional comfort, this pair is perfect to give your quintessential dressing an upgrade",
+        product_rating: "4.0",
+        product_rating_count: "807",
         product_img: "https://m.media-amazon.com/images/I/6162VSoK3TL._UX695_.jpg",
         product_price: "2000",
         product_discount_price: "999",
         product_discount_percenteage: "50",
-        product_color:"Brown",
-        product_size:"8UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Brown",
+        product_size: "8UK",
+        recentrly_view: false,
+        trending_product: true,
     },
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1185",
-        product_name:"TRASE women's & Girl's Slippers",
-        product_description:"Elevate your style with this comfortable pair of Slipper from the house of TRASE brand. Featuring a contemporary refined design with exceptional comfort, this pair is perfect to give your quintessential dressing an upgrade.",
-        product_rating:"4.0",
-        product_rating_count:"807",
+        product_name: "TRASE women's & Girl's Slippers",
+        product_description: "Elevate your style with this comfortable pair of Slipper from the house of TRASE brand. Featuring a contemporary refined design with exceptional comfort, this pair is perfect to give your quintessential dressing an upgrade.",
+        product_rating: "4.0",
+        product_rating_count: "807",
         product_img: "https://m.media-amazon.com/images/I/712G3zZ5RPL._UX695_.jpg",
         product_price: "2000",
         product_discount_price: "999",
         product_discount_percenteage: "50",
-        product_color:"White",
-        product_size:"7UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "White",
+        product_size: "7UK",
+        recentrly_view: false,
+        trending_product: true,
     },
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1186",
-        product_name:"PARAGON womens 0 Ankle Strap",
-        product_description:"Paragon footwear brings to you an exhaustive collection of flat footwear online, ranging from flat sandals, to flat slippers, and to flat flip flops in a wide variety of colors, designs & styles that suit every mood and occasion. Experience style, quality, and durability at affordable prices.",
-        product_rating:"4.5",
-        product_rating_count:"2345",
+        product_name: "PARAGON womens 0 Ankle Strap",
+        product_description: "Paragon footwear brings to you an exhaustive collection of flat footwear online, ranging from flat sandals, to flat slippers, and to flat flip flops in a wide variety of colors, designs & styles that suit every mood and occasion. Experience style, quality, and durability at affordable prices.",
+        product_rating: "4.5",
+        product_rating_count: "2345",
         product_img: "https://m.media-amazon.com/images/I/71izxSnyDKL._UX695_.jpg",
         product_price: "3299",
         product_discount_price: "2639",
         product_discount_percenteage: "20",
-        product_color:"Red",
-        product_size:"7UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Red",
+        product_size: "7UK",
+        recentrly_view: true,
+        trending_product: true,
     },
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1187",
-        product_name:"FLITE womens Pul034l Slipper",
-        product_description:"There are brands you wear and then there are brands you boast of. 'Flite' is the latter. It's Relaxo's most exclusive brand. It's unique Fashionable and Lite promise has made it the first choice of the Indian men and women, urban and rural. Available in comfortable and light casual wear and fashionable, stylish formal wear, its EVA and PU range is replete with design and colours. Flite makes it easy for the Indian youth to make a style statement. Go out in a pair of Flite and the world will notice you.",
-        product_rating:"4.0",
-        product_rating_count:"779",
+        product_name: "FLITE womens Pul034l Slipper",
+        product_description: "There are brands you wear and then there are brands you boast of. 'Flite' is the latter. It's Relaxo's most exclusive brand. It's unique Fashionable and Lite promise has made it the first choice of the Indian men and women, urban and rural. Available in comfortable and light casual wear and fashionable, stylish formal wear, its EVA and PU range is replete with design and colours. Flite makes it easy for the Indian youth to make a style statement. Go out in a pair of Flite and the world will notice you.",
+        product_rating: "4.0",
+        product_rating_count: "779",
         product_img: "https://m.media-amazon.com/images/I/61etCf+fB3L._UX695_.jpg",
         product_price: "1499",
         product_discount_price: "749",
         product_discount_percenteage: "50",
-        product_color:"Red",
-        product_size:"7UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Red",
+        product_size: "7UK",
+        recentrly_view: true,
+        trending_product: true,
     },
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1188",
-        product_name:"FLITE Women Flip-Flops",
-        product_description:"Relaxo Footwears Limited is one of the leading and most popular footwear companies in India. The widely celebrated Indian footwear brand offers a wide collection of fashionable and comfortable products for women, men, and children. Founded in 1976 by Mr. ML Dua and Mr. RK Dua, the company is headquartered in New Delhi and has regional offices in Bangalore, Mumbai, and Patna.",
-        product_rating:"4.0",
-        product_rating_count:"779",
+        product_name: "FLITE Women Flip-Flops",
+        product_description: "Relaxo Footwears Limited is one of the leading and most popular footwear companies in India. The widely celebrated Indian footwear brand offers a wide collection of fashionable and comfortable products for women, men, and children. Founded in 1976 by Mr. ML Dua and Mr. RK Dua, the company is headquartered in New Delhi and has regional offices in Bangalore, Mumbai, and Patna.",
+        product_rating: "4.0",
+        product_rating_count: "779",
         product_img: "https://m.media-amazon.com/images/I/715T0pUfy9L._UX695_.jpg",
         product_price: "3895",
         product_discount_price: "2726",
         product_discount_percenteage: "30",
-        product_color:"Brown",
-        product_size:"7UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Brown",
+        product_size: "7UK",
+        recentrly_view: true,
+        trending_product: true,
     },
-   
+
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1189",
-        product_name:"heel colorful Smart & Sleek",
-        product_description:"FOOTWEAR IS MANUFACTURED BY SMART TRADERS IN MADIPUR VILLAGE NEW DELHI IS KNOWN AS ONE OF THE GOOD QUALITY FOOTWEAR MANUFACTURING HUB",
-        product_rating:"5.0",
-        product_rating_count:"2178",
+        product_name: "heel colorful Smart & Sleek",
+        product_description: "FOOTWEAR IS MANUFACTURED BY SMART TRADERS IN MADIPUR VILLAGE NEW DELHI IS KNOWN AS ONE OF THE GOOD QUALITY FOOTWEAR MANUFACTURING HUB",
+        product_rating: "5.0",
+        product_rating_count: "2178",
         product_img: "https://m.media-amazon.com/images/I/51WooM8skAL._UY695_.jpg",
         product_price: "1600",
         product_discount_price: "799",
         product_discount_percenteage: "50",
-        product_color:"Blue",
-        product_size:"7UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Blue",
+        product_size: "7UK",
+        recentrly_view: true,
+        trending_product: true,
     },
     {
         cat_id: "2",
         sub_cat_id: "109",
         product_id: "1190",
-        product_name:"Catwalk Women Fashion Sandals",
-        product_description:"Ever since its inception, Catwalk has never been just a footwear brand. With its unique sense of fashion, sumptuous designs, dynamic styling and holistic understanding of what a woman wants, Catwalk has always been synonymous with high fashion. A premium brand with a sense of daring and provocation, Catwalk resonates with celebrities and the fashion world. Offering quality fashion assistance to its loyal customers is every retail brand's dream. Catwalk has been realizing this dream consistently and increasing their customer reach all across India.",
-        product_rating:"5.0",
-        product_rating_count:"1456",
+        product_name: "Catwalk Women Fashion Sandals",
+        product_description: "Ever since its inception, Catwalk has never been just a footwear brand. With its unique sense of fashion, sumptuous designs, dynamic styling and holistic understanding of what a woman wants, Catwalk has always been synonymous with high fashion. A premium brand with a sense of daring and provocation, Catwalk resonates with celebrities and the fashion world. Offering quality fashion assistance to its loyal customers is every retail brand's dream. Catwalk has been realizing this dream consistently and increasing their customer reach all across India.",
+        product_rating: "5.0",
+        product_rating_count: "1456",
         product_img: "https://m.media-amazon.com/images/I/71XFks+CAfL._UY695_.jpg",
         product_price: "3000",
         product_discount_price: "1499",
         product_discount_percenteage: "50",
-        product_color:"Red",
-        product_size:"9UK",
-        recentrly_view:true,
-        trending_product:true,
+        product_color: "Red",
+        product_size: "9UK",
+        recentrly_view: false,
+        trending_product: true,
     },
     {
         cat_id: "2",
@@ -1733,7 +1733,7 @@ const Product_data = [
         product_discount_percenteage: "90%",
         product_color: "Multicolor",
         product_size: "NA",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -1767,7 +1767,7 @@ const Product_data = [
         product_discount_percenteage: "15%",
         product_color: "Gold",
         product_size: "NA",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -1819,7 +1819,7 @@ const Product_data = [
         product_discount_percenteage: "50%",
         product_color: "Brown",
         product_size: "NA",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -1887,7 +1887,7 @@ const Product_data = [
         product_discount_percenteage: "64%",
         product_color: "Blue",
         product_size: "2-3 Years",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -1955,7 +1955,7 @@ const Product_data = [
         product_discount_percenteage: "74%",
         product_color: "Blue",
         product_size: "12-18 Months",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -2057,7 +2057,7 @@ const Product_data = [
         product_discount_percenteage: "25%",
         product_color: "Blue",
         product_size: "Small",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -2091,7 +2091,7 @@ const Product_data = [
         product_discount_percenteage: "50%",
         product_color: "Red",
         product_size: "Medium",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
@@ -2125,7 +2125,7 @@ const Product_data = [
         product_discount_percenteage: "20%",
         product_color: "Wooden",
         product_size: "Small",
-        recentrly_view: true,
+        recentrly_view: false,
         trending_product: true
     },
     {
