@@ -1,0 +1,25 @@
+background-image: url("https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg");
+
+
+background-image: url(https://n3.sdlcdn.com/imgs/j/8/e/Health_ID_Snapdeal_ABDM_1300X410-6c79d.jpg);
+background-image: url("https://n3.sdlcdn.com/imgs/k/f/v/12_april_WB_Breezy_Dresses_WEB-5febf.jpg");
+background-image: url("https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Festive_kurta_sets_WEB_1-9d9b7.jpg");
+
+702 
+282
+
+
+https://n1.sdlcdn.com/imgs/i/n/r/large/bhawna-collection-Loard-Shiv-Trishul-SDL890408077-1-86933.jpeg
+
+https://n4.sdlcdn.com/imgs/k/e/u/large/Veirdo-100-Cotton-Regular-Fit-SDL302182620-1-f0fac.jpg
+https://n3.sdlcdn.com/imgs/i/u/v/large/HeelSocks1-aeb5a.jpg
+https://n4.sdlcdn.com/imgs/i/z/e/large/Maxbell-USB-Rechargeable-Electronic-Flameless-SDL679184483-1-08e0f.jpg
+
+
+
+z-index: 50;
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow: 0 7px 17px 0 rgb(23 84 116 / 18%);
+    border: solid 0.9px #f3f3f3;
+

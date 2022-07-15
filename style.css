@@ -1,0 +1,142 @@
+#top-hook{
+    background-color: #c7003d;
+    border-radius: 2px;
+    height: 30px;
+    display: inline;
+    padding-top: 0.2rem;
+    justify-content: center;
+    padding-bottom: 2px;
+}
+::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #999;
+    border: none;
+    height: 37.5px;
+}
+#heartblink img:hover {
+    width: 25px;
+  }
+#top-hook span{
+    font-size: 12px;
+    padding-top: 0px;
+    text-transform: capitalize;
+    float: left;
+    margin-left: 5%;
+
+}
+#right-links{
+    margin-right: 3%;
+    display:flex;
+    
+}
+#top-hook-links{
+    margin-right: 20px;
+    display:inline-block;
+    font-style: #ffff;
+    
+}
+#right-links a:link{
+    display: inline-block;
+    font-style: #ffff;
+    text-decoration: none;
+}
+#cart a:link{
+    height:37px;
+    font-style: #ffff;
+}
+#navbar{
+    background-color:  #e40046;
+    display: flex;
+    float: left;
+}
+#logo-img{
+     height:40px;
+     width:150px;
+     margin-left:4%;
+     margin-top:10px;
+     margin-bottom: 10px;
+     margin-right: 5%;
+}
+#search-button{
+    margin-left:-5px;
+    background-color: #333;
+    border:none;
+    height: 37px;
+}
+.sd-icon-under-search-category{
+    content: "/f227";
+}
+#search-bar{
+    background-color : rgba(244,244,244);
+    border-right: none;
+    border: none;
+    font-size: 14px;
+    height: 37px;
+    padding: 0 10px 0 32px;
+    outline:none;
+    text-overflow: ellipsis;
+    border-radius: 2px 0px 0px 2px;
+    margin-left: 10%;
+    margin: 0px;
+    width:60%;
+    margin-top:20px;
+
+}
+
+#cart img{
+    height: 25px;
+    margin-left: 7px;
+} 
+#cart{
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 8px;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 15px;
+
+}
+#user-icon{
+    float: right;
+    margin-right:7%;
+    height: 37px;
+    color: #fff;
+    padding-top: 25px;
+    margin-left: 5px;
+    
+}
+#user-icon img{
+    height: 30px;
+    padding-top: 5px;
+}
+.top-head{
+    padding: 0px;
+}
+#sign-in{
+    margin-right: px;
+}
+#trending-categories{
+    list-style: none;
+}
+#main-body{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+#sidenav{
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 4px 3px 8px 1px gainsboro;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-size: 12px;
+    color: #666666;
+}
+body{
+    background-color: #f0f0f0;
+    display:inline-block
+}
+#sidenav ul{
+    text-align: left;
+}
