@@ -127,8 +127,6 @@
 }
 #sidenav{
     background-color: white;
-    margin-left: 50px;
-    margin-right: 20px;
     overflow: hidden;
     box-shadow: 4px 3px 8px 1px gainsboro;
     text-overflow: ellipsis;
@@ -167,7 +165,6 @@ body{
     line-height: 20px;
     z-index: 1000;
     height:400px;
-    overflow-y:auto;
 
 } 
 #womens-sub-categories{
@@ -178,7 +175,7 @@ body{
     line-height: 20px;
     z-index: 1000;
     height:400px;
-    overflow-y:auto;
+    
 
 } 
 #kids-sub-categories{
@@ -189,7 +186,6 @@ body{
     line-height: 20px;
     z-index: 1000;
     height:400px;
-    overflow-y:auto;
 
 } 
 #home-sub-categories{
@@ -200,7 +196,7 @@ body{
     line-height: 20px;
     z-index: 1000;
     height:400px;
-    overflow-y:auto;
+
 
 } 
 #health-sub-categories{
@@ -211,9 +207,10 @@ body{
     line-height: 20px;
     z-index: 1000;
     height:400px;
-    overflow-y:auto;
+
 
 } 
+
 
 #middle-div-categories{
     border-left: 1px solid lightgrey;
@@ -233,3 +230,4 @@ body{
     background-color: #f5f5f5;
 
 }
+
