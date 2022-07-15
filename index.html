@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Snap-Deal-Clone</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="header.js"></script>
     <script src="json_data.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -24,28 +38,38 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script>
-        var trending_product = [];
-        $(document).ready(function () {
-            for (let i = 0; i < footer_data.length; i++) {
-                document.getElementById(
-                    "footer-content"
-                ).innerHTML += `<p style="font-size:12px; color:#777777;"><b>${footer_data[i].heading}</b  > : ${footer_data[i].description} </p>`;
-            }
-            for (let i = 0; i < Product_data.length; i++) {
-                if (Product_data[i].trending_product === false) {
-                    trending_product.push(Product_data[i]);
-                }
-            }
-            if (trending_product.length > 0) {
-                console.log("trending_data", trending_product.length);
-                for (let j = 0; j < trending_product.length; j++) {
-                    console.log("dsdsd", trending_product[j])
-                    document.getElementById("trending_item").innerHTML += `
+      var trending_product = [];
+      var recentrly_view =[];
+      $(document).ready(function () {
+        for (let i = 0; i < footer_data.length; i++) {
+          document.getElementById(
+            "footer-content"
+          ).innerHTML += `<p style="font-size:12px; color:#777777;"><b>${footer_data[i].heading}</b  > : ${footer_data[i].description} </p>`;
+        }
+        for (let i = 0; i < Product_data.length; i++) {
+          if (Product_data[i].trending_product === false) {
+            trending_product.push(Product_data[i]);
+          }
+        }
+         for(let k = 0; k< Product_data.length; k++){
+            console.log( Product_data[k].recentrly_view);
+             if(Product_data[k].recentrly_view === false){
+                 recentrly_view.push(Product_data[k]);
+         }
+         }
+        
+
+        if (trending_product.length > 0) {
+            console.log("trending_data", trending_product.length);
+                    for (let j = 0; j < trending_product.length; j++) {
+                        console.log("dsdsd",trending_product[j])
+                      document.getElementById("trending_item").innerHTML += `
                       <div class="item" >
                     <div class="trending_content_product p-0 m-0">
                                             <div class="trending_content_product_box">
                                                 <img
                                                     src="${trending_product[j].product_img}">
+                                                    <div class="product_description_content">
                                                 <p class="product_description">${trending_product[j].product_description}</p>
                                                 <div class="product_review d-flex">
                                                     <i sty class="fa fa-star" aria-hidden="true"></i>
@@ -61,451 +85,734 @@
                                                 </div>
                                             </div>
                                         </div>   </div>
+                                        </div>
                     
                     `;
-                }
+                    }
+                   
+                  }
 
+                  if(recentrly_view.length > 0){
+            console.log("recentrly_view", recentrly_view.length);
+            for(let k =0; k <recentrly_view.length; k++){
+                document.getElementById("recent_item").innerHTML +=`
+                <div class="item" >
+                    <div class="trending_content_product p-0 m-0">
+                                            <div class="trending_content_product_box">
+                                                <img
+                                                    src="${recentrly_view[k].product_img}">
+                                                <p class="product_description">${recentrly_view[k].product_description}</p>
+                                                <div class="product_review d-flex">
+                                                    <i sty class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="product_prize d-flex">
+                                                    <p class="product_strike">RS${recentrly_view[k].product_price} </p>
+                                                    <p>RS${recentrly_view[k].product_discount_price}</p>
+                                                    <button class="prizeoff_btn">${recentrly_view[k].product_discount_percenteage} OFF</button>
+                                                </div>
+                                            </div>
+                                        </div>   </div>
+                `
             }
-        });
-
+        }
+      });
+     
     </script>
     <style>
-        .containerr {
-            width: 100%;
-            padding: 0;
-            margin: 0;
-        }
+      .containerr {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- row for header -->
     <div class="containerr">
-        <div class="row">
-            <!--div for top-hook-->
-            <div class="row col-sm-12 position-fixed-top float-left" id="top-hook">
-                <nav class="navbar top-head">
-                    <span class="text-light">brand waali quallity bazaar waali deal!</span>
-                    <span class="float-end text-light" id="right-links">
-                        <a href="#" class="text-light" id="top-hook-links">Impact@Snapdeal</a>
-                        <a href="#" class="text-light" id="top-hook-links">Gift Cards</a>
-                        <a href="#" class="text-light" id="top-hook-links">Help Centre</a>
-                        <a href="#" class="text-light" id="top-hook-links">SellOnSnapdeal</a>
-                        <a href="#" class="text-light" id="top-hook-links"><img
-                                src="https://i4.sdlcdn.com/img/platinum09/downloadappicon2ndsep.png"
-                                style="height: 15px" />
-                            Download App</a>
-                    </span>
-                </nav>
-            </div>
-            <!--div for heading-->
-            <nav class="row" id="navbar">
-                <div class="col-sm-8">
-                    <nav>
-                        <a>
-                            <img src="images/LOGO.png" id="logo-img" />
-                        </a>
-                        <span class="col-sm-8">
-                            <input type="text" placeholder="Search Products and Brands" id="search-bar" />
-                            <button type="button" class="text-light" id="search-button">
-                                <img src="images/search.webp" style="height: 25px" />Search
-                            </button>
-                        </span>
-                    </nav>
-                </div>
-                <div class="col-sm-1" style="border-right: 1px solid #c7003d"></div>
-                <div class="col-sm-1" style="border-right: 1px solid #c7003d">
-                    <span id="cart" class="text-light">
-                        <div style="cursor: pointer">
-                            <span id="carting">Cart</span><img src="images/cart-1.png" />
-                        </div>
-                    </span>
-                </div>
-                <div class="col-sm-1" id="sign-in">
-                    <span id="user-icon">Sign In<img src="images/user-1.png" /></span>
-                </div>
-                <div class="col-sm-1"></div>
+      <div class="row">
+        <!--div for top-hook-->
+        <div class="row col-sm-12 position-fixed-top float-left" id="top-hook">
+          <nav class="navbar top-head">
+            <span class="text-light"
+              >brand waali quallity bazaar waali deal!</span
+            >
+            <span class="float-end text-light" id="right-links">
+              <a href="#" class="text-light" id="top-hook-links"
+                >Impact@Snapdeal</a
+              >
+              <a href="#" class="text-light" id="top-hook-links">Gift Cards</a>
+              <a href="#" class="text-light" id="top-hook-links">Help Centre</a>
+              <a href="#" class="text-light" id="top-hook-links"
+                >SellOnSnapdeal</a
+              >
+              <a href="#" class="text-light" id="top-hook-links"
+                ><img
+                  src="https://i4.sdlcdn.com/img/platinum09/downloadappicon2ndsep.png"
+                  style="height: 15px"
+                />
+                Download App</a
+              >
+            </span>
+          </nav>
+        </div>
+        <!--div for heading-->
+        <nav class="row" id="navbar">
+          <div class="col-sm-8">
+            <nav>
+              <a>
+                <img src="images/LOGO.png" id="logo-img" />
+              </a>
+              <span class="col-sm-8">
+                <input
+                  type="text"
+                  placeholder="Search Products and Brands"
+                  id="search-bar"
+                />
+                <button type="button" class="text-light" id="search-button">
+                  <img src="images/search.webp" style="height: 25px" />Search
+                </button>
+              </span>
             </nav>
+          </div>
+          <div class="col-sm-1" style="border-right: 1px solid #c7003d"></div>
+          <div class="col-sm-1" style="border-right: 1px solid #c7003d">
+            <span id="cart" class="text-light">
+              <div style="cursor: pointer">
+                <span id="carting">Cart</span><img src="images/cart-1.png" />
+              </div>
+            </span>
+          </div>
+          <div class="col-sm-1" id="sign-in">
+            <span id="user-icon">Sign In<img src="images/user-1.png" /></span>
+          </div>
+          <div class="col-sm-1"></div>
+        </nav>
+      </div>
+      <!--div row for second row - consisting side bar and slider -->
+      <div class="row" id="main-body">
+        <!--div for side bar-->
+        <div class="col-2 bg-light" id="sidenav">
+          <ul style="list-style: none">
+            Top Categories
+            <li id="menscat">Men's Fashion</li>
+            <li id="womenscat">Women's Fashion</li>
+            <li id="homecat">Home & Kitchen</li>
+            <li id="kidscat">Toys, Kid's Fashion & more</li>
+            <li id="health">Beauty, Health & Daily Needs</li>
+          </ul>
         </div>
-        <!--div row for second row - consisting side bar and slider -->
-        <div class="row" id="main-body">
-            <!--div for side bar-->
-            <div class="col-2 bg-light" id="sidenav">
-                <ul style="list-style: none">
-                    Top Categories
-                    <li id="menscat">Men's Fashion</li>
-                    <li id="womenscat">Women's Fashion</li>
-                    <li id="homecat">Home & Kitchen</li>
-                    <li id="kidscat">Toys, Kid's Fashion & more</li>
-                    <li id="health">Beauty, Health & Daily Needs</li>
-                </ul>
-            </div>
-            <!--div for slider and main body on hp-->
-            <div class="col-10">
-                <div class="row p-0 m-0">
-                    <div class="col-9">
-                        <div class="slider_cotent">
-                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                        class="active btn slider-btn btn-primary" aria-current="true"
-                                        aria-label="Slide 1"></button>
-                                    <button type="button" class="btn slider-btn btn-primary"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                        aria-label="Slide 2"></button>
-                                    <button type="button" class="btn slider-btn btn-primary"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                        aria-label="Slide 3"></button>
-                                    <button type="button" class="btn slider-btn btn-primary"
-                                        data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                        aria-label="Slide 3"></button>
-                                </div>
+        <!--div for slider and main body on hp-->
+        <div class="col-10">
+          <div class="row p-0 m-0">
+            <div class="col-9">
+              <div class="slider_cotent">
+                <div
+                  id="carouselExampleCaptions"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="0"
+                      class="active btn slider-btn btn-primary"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      class="btn slider-btn btn-primary"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      class="btn slider-btn btn-primary"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      class="btn slider-btn btn-primary"
+                      data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
 
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="/image/Health_img.jpg" class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="image/Breezy_Dresses_img.jpg" class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="image/Festive_kurta_img.jpg" class="d-block w-100" alt="..." />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg"
-                                            class="d-block w-100" alt="..." />
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button"
-                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon change-icon-arrow"
-                                        aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button"
-                                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon change-icon-arrow"
-                                        aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="/image/Health_img.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
                     </div>
+                    <div class="carousel-item">
+                      <img
+                        src="image/Breezy_Dresses_img.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="image/Festive_kurta_img.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://n1.sdlcdn.com/imgs/k/f/v/12_april_WB_Kitchen_Essentials_WEB-cca82.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon change-icon-arrow"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon change-icon-arrow"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
+              </div>
             </div>
+            <div class="col-3">
+                <!-- <div class="snapdeal_login">
+                   <div class="snaplogin_img">
+                    <img src="image/snaplogin.png" alt="login-image"/>
+                   </div>
+                </div> -->
+                <!-- slider side section start -->
+          
+            <div class="right-signinbar">
+              <div class="signin-right">
+              <i class="fa fa-map-marker d-flex justify-content-center" aria-hidden="true"></i>
+              <div class="contentsign_rightbar">
+                <p class="delpin">Your Delivery Pincode</p>
+              </div>
+              <div class="dashpincode"></div>
+              <p class="pincodecheck">Enter your pincode to check availability <br>and faster delivery options</p>
+              
+          
+            <div class="mx-2 my-3"><input type="text"  class="form-control"  placeholder="Enter pincode" name="pincode" maxlength="4"></div>
+          <div class="snapdel_submit d-flex ">
+            <button class="snap_submit">Submit</button>
+            <!-- <button class="snap_next">Next</button> -->
+            <button class="snap_next">Next</button>
+          </div>
+          </div>
         </div>
-        <div class="trending-product">
-            <h4>TRENDING PRODUCTS</h4>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="owl-carousel owl-theme owl-slider" id="trending_item">
-
-                        </div>
-                        <script>
-                            $(document).ready(function () {
-                                $('.owl-carousel').owlCarousel({
-                                    loop: true,
-                                    nav: true,
-                                    margin: 10,
-                                    responsiveClass: true,
-                                    responsive: {
-                                        0: {
-                                            items: 1,
-                                            nav: true
-                                        },
-                                        600: {
-                                            items: 3,
-                                            nav: false
-                                        },
-                                        1000: {
-                                            items: 4,
-                                            nav: true,
-                                            loop: true,
-                                            margin: 20
-                                        }
-                                    }
-
-                                })
-                            })
-                        </script>
-                    </div>
-                </div>
+       
+          <!-- slider side section end -->
             </div>
-
+          </div>
         </div>
+      </div>
 
-        <!--div row for footer-->
-        <div class="">
-            <div class="container" style="background-color:rgb(255,255,255) ;">
-                <div class="row px-5 py-5">
-                    <div class="col-md-6 text-center">
-                        <img src="images\mobileImage.png" alt="" class="img-fluid" style="width: 430px;
-                    height: 462px;">
-                    </div>
-                    <div class="col-md-6 text-left" style="margin-top:65px;">
-                        <span style="  font-size: 40.4px;
-                    font-weight: bold;
-                    line-height: 1.33;
-                    color: #222222;">Download Snapdeal <br> App Now</span>
-                        <br><br>
-                        <p style="font-size: 17.6px;
-                    font-weight: normal;
-                    line-height: 1.84;
-                    color: #777777;">Fast, Simple & Delightful. <br>
-                            All it takes is 30 seconds to Download.
-                        </p>
-                        <div>
-                            <img style="    width: 130px;
-                    height: 41px;" src="images\appleImage.png" alt="" srcset="">
-                            <img style="    width: 130px;
-                    height:52px;" src="images/playstoreImage.png" alt="" srcset="">
-                        </div>
-                    </div>
-                </div>
+      <!-- trending product html start -->
+      <div class="trending-product">
+        
+
+        <div class="container">
+          <div class="row">
+
+            <div class="col-12">
+                <h4>TRENDING PRODUCTS</h4>
+              <div class="owl-carousel owl-theme owl-slider" id="trending_item">
+               
+              </div>
+              <script>
+                $(document).ready(function () {
+                    $(".owl-carousel").owlCarousel({
+                      loop: true,
+                      nav: true,
+                      margin: 10,
+                      responsiveClass: true,
+                      responsive: {
+                        0: {
+                          items: 1,
+                          nav: true,
+                        },
+                        600: {
+                          items: 3,
+                          nav: false,
+                        },
+                        1000: {
+                          items: 4,
+                          nav: true,
+                          loop: true,
+                          margin: 20,
+                        },
+                      },
+                    });
+                
+                });
+              </script>
             </div>
-            <div class="container-fluid" style="background-color:rgb(255,255,255) ;">
-                <div class="row">
-                    <div class="col-md-12 py-4" style="background-color: rgb(247,247,247);">
-
-                    </div>
-                </div>
-                <div class="row border px-5">
-                    <div class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3">
-                        <div class="service-box" style=" color: #344c55;
-            font-size: 13px;">
-                            <img src="images\lock.png" class="mb-2" alt="" srcset="">
-                            <h3 style=" color: #5a5a5a;
-            font-size: 14px;">100% SECURE PAYMENT</h3>
-                            <p style="color: #a4a3a3;    font-size: 11px">Moving your card details
-                                to a much more
-                                secured
-                                place
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3">
-                        <div class="service-box" style=" color: #344c55;
-            font-size: 13px;">
-                            <img src="images\shield.png" class="mb-2" alt="" srcset="">
-                            <h3 style=" color: #5a5a5a;
-            font-size: 14px;">TRUESTPAY</h3>
-                            <p style="color: #a4a3a3;    font-size: 11px">100% Payment Protection.
-                                Easy Return
-                                Policy
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3">
-                        <div class="service-box" style=" color: #344c55;
-            font-size: 13px;">
-                            <img src="images\help.png" class="mb-2" alt="" srcset="">
-                            <h3 style=" color: #5a5a5a;
-            font-size: 14px;">HELP CENTER</h3>
-                            <p style="color: #a4a3a3;    font-size: 11px">Got a question? Look no
-                                further.Browse our
-                                FAQs or
-                                submit your query here.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3">
-                        <div class="service-box" style=" color: #344c55;
-            font-size: 13px;">
-                            <img src="images\mobile.png" class="mb-2" alt="" srcset="">
-                            <h3 style=" color: #5a5a5a;
-            font-size: 14px;">SHOP ON THE GO</h3>
-                            <p style="color: #a4a3a3;    font-size: 11px">Download the app and get
-                                exciting app only
-                                offers
-                                at
-                                your fingertips</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row py-4 px-5">
-                    <div id="footer-sidebar" style=" color: #344c55;
-                font-size: 13px;padding: 10px;">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-2">
-                                <div class="footer-widget">
-                                    <strong>
-                                        <h6 style=" color: #344c55;;
-            font-weight: 600;
-            font-size: 14px;">POLICY INFO</h6>
-                                    </strong>
-                                    <ul style="color: #a5a5a5;font-size: 12px;" class="latest-news list-unstyled">
-                                        <li>Privacy Policy</li>
-                                        <li>Terms of Sale</li>
-                                        <li>Terms of Use</li>
-                                        <li>Report Abuse & Takedown Policy</li>
-                                        <li>FAQ </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <div class="footer-widget">
-                                    <strong>
-                                        <h6 style=" color: #344c55;;
-            font-weight: 600;
-            font-size: 14px;">COMPANY</h6>
-                                    </strong>
-                                    <ul style="color: #a5a5a5;font-size: 12px;" class="latest-news list-unstyled">
-                                        <li>Impact@Snapdeal</li>
-                                        <li>Careers</li>
-                                        <li>Blog</li>
-                                        <li>Sitemap</li>
-                                        <li>Contact Us</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <div class="footer-widget">
-                                    <strong>
-                                        <h6 style=" color: #344c55;;
-            font-weight: 600;
-            font-size: 14px;">SNAPDEAL BUSSINESS</h6>
-                                    </strong>
-                                    <ul style="color: #a5a5a5;font-size: 12px;" class="latest-news list-unstyled">
-                                        <li>Shopping App</li>
-                                        <li>Sell on Snapdeal</li>
-                                        <li>Media Enquiries</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-2">
-                                <div class="footer-widget">
-                                    <strong>
-                                        <h6 style=" color: #344c55;;
-            font-weight: 600;
-            font-size: 14px;">POPULAR LINKS</h6>
-                                    </strong>
-                                    <ul style="color: #a5a5a5;font-size: 12px;" class="latest-news list-unstyled">
-                                        <li>Lehenga</li>
-                                        <li>Headphones</li>
-                                        <li>Kid's Clothing</li>
-                                        <li>Sarees</li>
-                                        <li>Shoes</li>
-                                        <li>Winter Wear</li>
-                                        <li>Shirt For Men</li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-4 px-5 ">
-                                <strong>
-                                    <h6 style=" color: #344c55;font-weight: 600; font-size: 14px;">
-                                        SUBSCRIBE</h6>
-                                </strong>
-                                <div class="SUBSCRIBE input-group mt-4 mb-4 d-flex flex-wrap">
-                                    <input style="background-color: #f7f8fa;" type="text" class="form-control"
-                                        placeholder="Your email address" aria-label="Recipient's username"
-                                        aria-describedby="basic-addon2">
-                                    <span style="text-align: center; padding-top: 8px;background: #333;
-                                    font-size: 12px; border-top-right-radius: 2.9px;
-                                    border-bottom-right-radius: 2.9px;" class="input-group-text btn btn-dark"
-                                        id="basic-addon2">SUBSCRIBE</span>
-
-                                </div>
-                                <p class="mt-4" style="color: #777777;font-size: 10px;">Register now
-                                    to get updates
-                                    on
-                                    promotions and <a href="">Or Download App</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row border px-5 py-3">
-                    <div style="font-size: 14px; color: #344c55;" class="col-md-6">
-                        PAYMENT
-                        <div class="iconClass">
-                            <img src="images/icons/imgcard1.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 15px;">
-                            <img src="images/icons/imgcard2.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 15px;">
-                            <img src="images/icons/imgcard3.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 15px;">
-                            <img src="images/icons/imgcard4.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 15px;">
-                            <img src="images/icons/imgcard5.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 15px;">
-                            <img src="images/icons/imgcard6.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 15px;">
-                        </div>
-                    </div>
-                    <div style="  font-size: 14px;  color: #344c55;" class="col-md-6">
-                        CONNECT
-                        <div class="iconClass">
-                            <img src="images/icons/facebook.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 20px;">
-                            <img src="images/icons/twitter.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 20px;">
-                            <img src="images/icons/instagram.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 20px;">
-                            <img src="images/icons/linkedin.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 20px;">
-                            <img src="images/icons/youtube.png" alt="" srcset="" style="width: 30px;
-            margin-right: 20px;
-            margin-top: 20px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="container-fluid bg-light p-5">
-            <div id="footer-content" class="pb-1 m-1">
-                <p></p>
-            </div>
-            <div style="font-size: 12px; color: #777777; margin-top: 15px">
-                Snapdeal is India's leading pure-play value Ecommerce platform. Founded
-                in 2010 by Kunal Bahl and Rohit Bansal, Snapdeal is one of the top four
-                online lifestyle shopping destinations of India. Snapdeal brings
-                together a wide assortment of good quality and value- priced merchandise
-                on its platform. Snapdeal's vision is to enable the shoppers of Bharat
-                to experience the joy of living their aspirations through reliable,
-                value-for-money shopping. With a personalized, multilingual interface
-                and cutting edge technology, Snapdeal has simplified the shopping
-                experience for its value-conscious buyers by showcasing the most
-                relevant products- products that are a good functional fit with their
-                needs and of a quality that lasts- thereby delivering true value to its
-                customers. With its commitment to high service standards, Snapdeal
-                suppliers operate under a well structured ecosystem that enables them to
-                offer great quality products at affordable prices. With majority of the
-                value-seeking, middle-income, price-conscious buyers coming from the
-                non-metros, Snapdeal’s logistics networks powered by third party
-                logistics cover more than 96% of India’s pin codes enabling order
-                deliveries to more than 2500 towns and cities and expanding. Further,
-                Snapdeal's mission is to become India’s value lifestyle omni-channel
-                leader. We are excited about continuing to build a complete ecosystem
-                around value commerce, where we can serve Bharat consumers wherever they
-                are on their offline to online shopping journey. Snapdeal is part of the
-                AceVector Group and one of India’s best-known e-commerce companies with
-                an exclusive focus on the value segment.
-            </div>
+      </div>
+<!-- trending product html end -->
+<!-- recent product html start -->
+<div class="trending-product">
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <h4>RECENT VIEW PRODUCTS</h4>
+          <div class="owl-carousel owl-theme owl-slider" id="recent_item">
+           
+          </div>
+          <script>
+            $(document).ready(function () {
+                $(".owl-carousel").owlCarousel({
+                  loop: true,
+                  nav: true,
+                  margin: 10,
+                  responsiveClass: true,
+                  responsive: {
+                    0: {
+                      items: 1,
+                      nav: true,
+                    },
+                    600: {
+                      items: 3,
+                      nav: false,
+                    },
+                    1000: {
+                      items: 4,
+                      nav: true,
+                      loop: true,
+                      margin: 20,
+                    },
+                  },
+                });
+            
+            });
+          </script>
         </div>
-        <div class="bg-white" style="padding: 15px 50px">
-            <div class="d-flex justify-content-between">
-                <div style="font-size: 12px; color: #666666" class="">
-                    Copyright © 2021, Snapdeal Limited. All Rights Reserved
-                </div>
-                <div id="heartblink" style="font-size: 12px; color: #666666" class="">
-                    Made for Bharat
-                    <img src="/images/heart.png" alt="" srcset="" style="height: 15px; width: 15px" />
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
+  </div>
+ 
+  <!-- recent product html end -->
 
+
+      <!--div row for footer-->
+      <div class="">
+        <div class="container" style="background-color: rgb(255, 255, 255)">
+          <div class="row px-5 py-5">
+            <div class="col-md-6 text-center">
+              <img
+                src="images\mobileImage.png"
+                alt=""
+                class="img-fluid"
+                style="width: 430px; height: 462px"
+              />
+            </div>
+            <div class="col-md-6 text-left" style="margin-top: 65px">
+              <span
+                style="
+                  font-size: 40.4px;
+                  font-weight: bold;
+                  line-height: 1.33;
+                  color: #222222;
+                "
+                >Download Snapdeal <br />
+                App Now</span
+              >
+              <br /><br />
+              <p
+                style="
+                  font-size: 17.6px;
+                  font-weight: normal;
+                  line-height: 1.84;
+                  color: #777777;
+                "
+              >
+                Fast, Simple & Delightful. <br />
+                All it takes is 30 seconds to Download.
+              </p>
+              <div>
+                <img
+                  style="width: 130px; height: 41px"
+                  src="images\appleImage.png"
+                  alt=""
+                  srcset=""
+                />
+                <img
+                  style="width: 130px; height: 52px"
+                  src="images/playstoreImage.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container-fluid"
+          style="background-color: rgb(255, 255, 255)"
+        >
+          <div class="row">
+            <div
+              class="col-md-12 py-4"
+              style="background-color: rgb(247, 247, 247)"
+            ></div>
+          </div>
+          <div class="row border px-5">
+            <div
+              class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3"
+            >
+              <div class="service-box" style="color: #344c55; font-size: 13px">
+                <img src="images\lock.png" class="mb-2" alt="" srcset="" />
+                <h3 style="color: #5a5a5a; font-size: 14px">
+                  100% SECURE PAYMENT
+                </h3>
+                <p style="color: #a4a3a3; font-size: 11px">
+                  Moving your card details to a much more secured place
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3"
+            >
+              <div class="service-box" style="color: #344c55; font-size: 13px">
+                <img src="images\shield.png" class="mb-2" alt="" srcset="" />
+                <h3 style="color: #5a5a5a; font-size: 14px">TRUESTPAY</h3>
+                <p style="color: #a4a3a3; font-size: 11px">
+                  100% Payment Protection. Easy Return Policy
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3"
+            >
+              <div class="service-box" style="color: #344c55; font-size: 13px">
+                <img src="images\help.png" class="mb-2" alt="" srcset="" />
+                <h3 style="color: #5a5a5a; font-size: 14px">HELP CENTER</h3>
+                <p style="color: #a4a3a3; font-size: 11px">
+                  Got a question? Look no further.Browse our FAQs or submit your
+                  query here.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 col-sm-6 border-end border-start border-bottom text-center py-3"
+            >
+              <div class="service-box" style="color: #344c55; font-size: 13px">
+                <img src="images\mobile.png" class="mb-2" alt="" srcset="" />
+                <h3 style="color: #5a5a5a; font-size: 14px">SHOP ON THE GO</h3>
+                <p style="color: #a4a3a3; font-size: 11px">
+                  Download the app and get exciting app only offers at your
+                  fingertips
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row py-4 px-5">
+            <div
+              id="footer-sidebar"
+              style="color: #344c55; font-size: 13px; padding: 10px"
+            >
+              <div class="row">
+                <div class="col-sm-6 col-md-2">
+                  <div class="footer-widget">
+                    <strong>
+                      <h6
+                        style="
+                          color: #344c55;
+                          font-weight: 600;
+                          font-size: 14px;
+                        "
+                      >
+                        POLICY INFO
+                      </h6>
+                    </strong>
+                    <ul
+                      style="color: #a5a5a5; font-size: 12px"
+                      class="latest-news list-unstyled"
+                    >
+                      <li>Privacy Policy</li>
+                      <li>Terms of Sale</li>
+                      <li>Terms of Use</li>
+                      <li>Report Abuse & Takedown Policy</li>
+                      <li>FAQ</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                  <div class="footer-widget">
+                    <strong>
+                      <h6
+                        style="
+                          color: #344c55;
+                          font-weight: 600;
+                          font-size: 14px;
+                        "
+                      >
+                        COMPANY
+                      </h6>
+                    </strong>
+                    <ul
+                      style="color: #a5a5a5; font-size: 12px"
+                      class="latest-news list-unstyled"
+                    >
+                      <li>Impact@Snapdeal</li>
+                      <li>Careers</li>
+                      <li>Blog</li>
+                      <li>Sitemap</li>
+                      <li>Contact Us</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                  <div class="footer-widget">
+                    <strong>
+                      <h6
+                        style="
+                          color: #344c55;
+                          font-weight: 600;
+                          font-size: 14px;
+                        "
+                      >
+                        SNAPDEAL BUSSINESS
+                      </h6>
+                    </strong>
+                    <ul
+                      style="color: #a5a5a5; font-size: 12px"
+                      class="latest-news list-unstyled"
+                    >
+                      <li>Shopping App</li>
+                      <li>Sell on Snapdeal</li>
+                      <li>Media Enquiries</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-2">
+                  <div class="footer-widget">
+                    <strong>
+                      <h6
+                        style="
+                          color: #344c55;
+                          font-weight: 600;
+                          font-size: 14px;
+                        "
+                      >
+                        POPULAR LINKS
+                      </h6>
+                    </strong>
+                    <ul
+                      style="color: #a5a5a5; font-size: 12px"
+                      class="latest-news list-unstyled"
+                    >
+                      <li>Lehenga</li>
+                      <li>Headphones</li>
+                      <li>Kid's Clothing</li>
+                      <li>Sarees</li>
+                      <li>Shoes</li>
+                      <li>Winter Wear</li>
+                      <li>Shirt For Men</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 px-5">
+                  <strong>
+                    <h6
+                      style="color: #344c55; font-weight: 600; font-size: 14px"
+                    >
+                      SUBSCRIBE
+                    </h6>
+                  </strong>
+                  <div class="SUBSCRIBE input-group mt-4 mb-4 d-flex flex-wrap">
+                    <input
+                      style="background-color: #f7f8fa"
+                      type="text"
+                      class="form-control"
+                      placeholder="Your email address"
+                      aria-label="Recipient's username"
+                      aria-describedby="basic-addon2"
+                    />
+                    <span
+                      style="
+                        text-align: center;
+                        padding-top: 8px;
+                        background: #333;
+                        font-size: 12px;
+                        border-top-right-radius: 2.9px;
+                        border-bottom-right-radius: 2.9px;
+                      "
+                      class="input-group-text btn btn-dark"
+                      id="basic-addon2"
+                      >SUBSCRIBE</span
+                    >
+                  </div>
+                  <p class="mt-4" style="color: #777777; font-size: 10px">
+                    Register now to get updates on promotions and
+                    <a href="">Or Download App</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row border px-5 py-3">
+            <div style="font-size: 14px; color: #344c55" class="col-md-6">
+              PAYMENT
+              <div class="iconClass">
+                <img
+                  src="images/icons/imgcard1.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 15px"
+                />
+                <img
+                  src="images/icons/imgcard2.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 15px"
+                />
+                <img
+                  src="images/icons/imgcard3.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 15px"
+                />
+                <img
+                  src="images/icons/imgcard4.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 15px"
+                />
+                <img
+                  src="images/icons/imgcard5.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 15px"
+                />
+                <img
+                  src="images/icons/imgcard6.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 15px"
+                />
+              </div>
+            </div>
+            <div style="font-size: 14px; color: #344c55" class="col-md-6">
+              CONNECT
+              <div class="iconClass">
+                <img
+                  src="images/icons/facebook.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 20px"
+                />
+                <img
+                  src="images/icons/twitter.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 20px"
+                />
+                <img
+                  src="images/icons/instagram.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 20px"
+                />
+                <img
+                  src="images/icons/linkedin.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 20px"
+                />
+                <img
+                  src="images/icons/youtube.png"
+                  alt=""
+                  srcset=""
+                  style="width: 30px; margin-right: 20px; margin-top: 20px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-light p-5">
+        <div id="footer-content" class="pb-1 m-1">
+          <p></p>
+        </div>
+        <div style="font-size: 12px; color: #777777; margin-top: 15px">
+          Snapdeal is India's leading pure-play value Ecommerce platform.
+          Founded in 2010 by Kunal Bahl and Rohit Bansal, Snapdeal is one of the
+          top four online lifestyle shopping destinations of India. Snapdeal
+          brings together a wide assortment of good quality and value- priced
+          merchandise on its platform. Snapdeal's vision is to enable the
+          shoppers of Bharat to experience the joy of living their aspirations
+          through reliable, value-for-money shopping. With a personalized,
+          multilingual interface and cutting edge technology, Snapdeal has
+          simplified the shopping experience for its value-conscious buyers by
+          showcasing the most relevant products- products that are a good
+          functional fit with their needs and of a quality that lasts- thereby
+          delivering true value to its customers. With its commitment to high
+          service standards, Snapdeal suppliers operate under a well structured
+          ecosystem that enables them to offer great quality products at
+          affordable prices. With majority of the value-seeking, middle-income,
+          price-conscious buyers coming from the non-metros, Snapdeal’s
+          logistics networks powered by third party logistics cover more than
+          96% of India’s pin codes enabling order deliveries to more than 2500
+          towns and cities and expanding. Further, Snapdeal's mission is to
+          become India’s value lifestyle omni-channel leader. We are excited
+          about continuing to build a complete ecosystem around value commerce,
+          where we can serve Bharat consumers wherever they are on their offline
+          to online shopping journey. Snapdeal is part of the AceVector Group
+          and one of India’s best-known e-commerce companies with an exclusive
+          focus on the value segment.
+        </div>
+      </div>
+      <div class="bg-white" style="padding: 15px 50px">
+        <div class="d-flex justify-content-between">
+          <div style="font-size: 12px; color: #666666" class="">
+            Copyright © 2021, Snapdeal Limited. All Rights Reserved
+          </div>
+          <div id="heartblink" style="font-size: 12px; color: #666666" class="">
+            Made for Bharat
+            <img
+              src="/images/heart.png"
+              alt=""
+              srcset=""
+              style="height: 15px; width: 15px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
