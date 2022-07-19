@@ -133,8 +133,63 @@
 .trending_content_product_box img{
     object-fit: contain;
 }
- /* .owl-nav button.owl-next,  .owl-nav button.owl-prev{
-    
-} */
+/* rightbar sign in css */
+
+.signin-right i{
+    font-size: 50px;
+    color:#ffd611;
+    text-align: center;
+    margin: 34px 0px;
+    margin: 14px 0px;
+}
+.signin-right{
+    width: 100%;
+    border: solid 0.9px #e5e5e5;
+    border-radius: 3px;
+}
+.dashpincode{
+    height: 2px;
+    background-color: #eaeaea;
+    width: 19px;
+    margin: 11px auto;
+}
+.contentsign_rightbar .delpin{
+    text-align: center;
+    color: #999999;
+    font-size: 10px;
+}
+.right-signinbar .pincodecheck{
+    text-align: center;
+    font-size: 11px;
+    color: #5a5a59;
+    line-height: 1.59;
+}
+.right-signinbar{
+    min-height: 329px;
+}
+.pincodeinput{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.snapdel_submit .snap_submit{
+    border-color: #333;
+    background-color: #333;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 54px;
+    border-radius: 3px;
+    margin: 4px 10px 12px 10px;
+}
+
+
+.snap_next {
+    background: #f4f4f4;
+    color: #999;
+    border-radius: 3px;
+    font-size: 12px;
+    margin: 4px 12px 12px 0px;
+    padding: 6px 26px;
+    border: none;
+}
 
 
