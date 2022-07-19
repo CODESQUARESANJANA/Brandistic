@@ -14,6 +14,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -265,7 +280,8 @@
                             <ul style="list-style: none;" id="bottom-border-ul"><b>JWELLERY & CUFFLINKS</b>
                             </ul>
 
-                            <ul style="list-style: none;" id="bottom-border-ul"><a href="plp-page.html?cat_id=1&&sub_cat_id=105"><b>ACCESSORIES</b></a>
+                            <ul style="list-style: none;" id="bottom-border-ul"><a
+                                    href="plp-page.html?cat_id=1&&sub_cat_id=105"><b>ACCESSORIES</b></a>
                                 <li>Wallets</li>
                                 <li>Belts</li>
                                 <li>Hats & Caps</li>
@@ -366,7 +382,8 @@
                             <ul style="list-style: none;" id="bottom-border-ul"><b>WATCHES</b>
                             </ul>
 
-                            <ul style="list-style: none;" id="bottom-border-ul"><a href="plp-page.html?cat_id=2&&sub_cat_id=110"><b>Jewellery</b></a>
+                            <ul style="list-style: none;" id="bottom-border-ul"><a
+                                    href="plp-page.html?cat_id=2&&sub_cat_id=110"><b>Jewellery</b></a>
                                 <li>Necklaces & Sets</li>
                                 <li>Earrings</li>
                                 <li>Bangles & Bracelets</li>
@@ -394,10 +411,11 @@
                 <div class=" bg-light" id="kids-sub-categories" style="display:none; z-index: 111; position: absolute;"
                     onmouseover="MouseCome2()" onmouseleave="mouseL2()">
                     <div class="row">
-                            <div class="col-sm-3 mt-2">
+                        <div class="col-sm-3 mt-2">
 
-                            
-                                <ul style="list-style: none;" id="bottom-border-ul"><a href="plp-page.html?cat_id=3&&sub_cat_id=112"><b>TOYS</b></a>
+
+                            <ul style="list-style: none;" id="bottom-border-ul"><a
+                                    href="plp-page.html?cat_id=3&&sub_cat_id=112"><b>TOYS</b></a>
                                 <li>Toy Cars</li>
                                 <li>Electronic Toys</li>
                                 <li>Action Toys & Figures</li>
@@ -428,7 +446,8 @@
                             <ul><b>Kid's Watches</b></ul>
                         </div>
                         <div class="col-sm-3 mt-2" id="middle-div-categories">
-                            <ul style="list-style: none;" id="bottom-border-ul"><a href="plp-page.html?cat_id=3&&sub_cat_id=111"><b>KID'S CLOTHING</b></a></ul>
+                            <ul style="list-style: none;" id="bottom-border-ul"><a
+                                    href="plp-page.html?cat_id=3&&sub_cat_id=111"><b>KID'S CLOTHING</b></a></ul>
                             <ul style="list-style: none;" id="bottom-border-ul"><b>GIRL'S CLOTHING</b>
                                 <li>Frocks & Dresses</li>
                                 <li>Lehenga Cholis & Sarees</li>
@@ -473,7 +492,8 @@
                             <ul style="list-style: none;" id="bottom-border-ul"><b>LAB EQUIPMENT</b>
                             </ul>
 
-                            <ul style="list-style: none;"><a href="plp-page.html?cat_id=3&&sub_cat_id=113"><b>STATIONERY</b></a>
+                            <ul style="list-style: none;"><a
+                                    href="plp-page.html?cat_id=3&&sub_cat_id=113"><b>STATIONERY</b></a>
                                 <li>Pens & Markers</li>
                                 <li>Pencil Boxes</li>
                                 <li>Files & Folders</li>
@@ -985,7 +1005,12 @@
                                         <li>Careers</li>
                                         <li>Blog</li>
                                         <li>Sitemap</li>
-                                        <li>Contact Us</li>
+                                        <li data-toggle="modal" data-target="#exampleModal">
+                                            Contact Us
+                                        </li>
+                                        <li data-toggle="modal" data-target="#exampleModal1">
+                                            About us
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -1135,6 +1160,123 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade about_modal_center" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog justify-content-center" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" onsubmit="validateForm()">
+                            <input type="text" placeholder="First Name" class="form-control" id="firstnameElement"
+                                name="firstname" />
+                            <span id="fnameError"></span>
+                            <br />
+                            <input type="text" placeholder="Last Name" id="lastnameElement"
+                                class="form-control" /><br />
+                            <input type="email" placeholder="email" id="emailElement" class="form-control" /><br />
+                            <textarea placeholder="message" class="form-control" maxlength="100" rows="5"></textarea>
+                            <div class="modal-footer">
+                                <input type="submit" class="btn btn-primary" />
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact us end here -->
+
+        <!-- About us html start here -->
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" >
+  Launch demo modal
+</button> -->
+
+        <!-- Modal -->
+        <div class="modal fade " id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true" style="">
+            <div class="modal-dialog about_modal_center" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">About us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="about-content">
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type
+                                specimen book.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About us html end here -->
+    </div>
+
+    <script>
+        // document.getElementsByClassName("modal-dialog").css("margin-top", Math.max(0, ($(window).height() - modalDialog.height()) / 2))
+        function validateForm() {
+            // e.preventDefault()
+            let alphaRegex = /^[a-zA-Z]*$/;
+            let emailRegex = /(.+)@(.+){2,}\.(.+){2,}/;
+            //Validate first name
+            let fName = document.getElementById("firstnameElement").value;
+            let fnameError = document.getElementById("fnameError");
+            if (!fName) {
+                alert("please enter first name");
+                // fnameError.innerText="please enter first name"
+                return false;
+            } else if (!alphaRegex.test(fName)) {
+                // fnameError.innerText="first name should be alphabet only"
+
+                alert("first name should be alphabet only");
+                return false;
+            }
+
+            // Validate last name
+            let lName = document.getElementById("lastnameElement").value;
+            if (!lName) {
+                alert("please enter last name");
+                return false;
+            } else if (!alphaRegex.test(lName)) {
+                alert("last name should be alphabet only");
+                return false;
+            }
+
+            // Validate Email
+            let email = document.getElementById("emailElement").value;
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email");
+                return false;
+            } else if (!email) {
+                alert("Please enter your email");
+                return false;
+            }
+        }
+    </script>
     </div>
 </body>
 
