@@ -104,7 +104,7 @@ const Product_data = [
         product_price: "499",
         product_discount_price: "299",
         product_discount_percenteage: "40",
-        product_color: "White",
+        product_color: "orange",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: false
@@ -121,7 +121,7 @@ const Product_data = [
         product_price: "1099",
         product_discount_price: "494",
         product_discount_percenteage: "55",
-        product_color: "Green",
+        product_color: "green",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: true
@@ -138,7 +138,7 @@ const Product_data = [
         product_price: "1299",
         product_discount_price: "571",
         product_discount_percenteage: "56",
-        product_color: "Green",
+        product_color: "green",
         product_size: "S,M,L,XL,XXL",
         recentrly_view: true,
         trending_product: true
@@ -155,7 +155,7 @@ const Product_data = [
         product_price: "599",
         product_discount_price: "269",
         product_discount_percenteage: "55",
-        product_color: "Black",
+        product_color: "black",
         product_size: "S,M,L,XL",
         recentrly_view: false,
         trending_product: true
@@ -172,7 +172,7 @@ const Product_data = [
         product_price: "699",
         product_discount_price: "454",
         product_discount_percenteage: "35",
-        product_color: "Blue Shade",
+        product_color: "blue",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: false
@@ -189,7 +189,7 @@ const Product_data = [
         product_price: "499",
         product_discount_price: "299",
         product_discount_percenteage: "40",
-        product_color: "Maroon",
+        product_color: "yellow",
         product_size: "S,M,L,XL",
         recentrly_view: false,
         trending_product: true
@@ -206,7 +206,7 @@ const Product_data = [
         product_price: "699",
         product_discount_price: "314",
         product_discount_percenteage: "55",
-        product_color: "grey",
+        product_color: "yellow",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: false
@@ -223,7 +223,7 @@ const Product_data = [
         product_price: "949",
         product_discount_price: "408",
         product_discount_percenteage: "57",
-        product_color: "Strip Blue",
+        product_color: "blue",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: true
@@ -240,7 +240,7 @@ const Product_data = [
         product_price: "749",
         product_discount_price: "1199",
         product_discount_percenteage: "",
-        product_color: "Navy Blue",
+        product_color: "blue",
         product_size: "X,M,L,XL",
         recentrly_view: true,
         trending_product: true
@@ -257,7 +257,7 @@ const Product_data = [
         product_price: "999",
         product_discount_price: "599",
         product_discount_percenteage: "40",
-        product_color: "Black",
+        product_color: "black",
         product_size: "X,M,L,XL",
         recentrly_view: false,
         trending_product: true
@@ -291,7 +291,7 @@ const Product_data = [
         product_price: "2799",
         product_discount_price: "1539",
         product_discount_percenteage: "45%",
-        product_color: "Blue dark",
+        product_color: "blue",
         product_size: "28,30,32,34,36",
         recentrly_view: true,
         trending_product: true
@@ -308,7 +308,7 @@ const Product_data = [
         product_price: "2799",
         product_discount_price: "749",
         product_discount_percenteage: "75%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "30,32,34,36",
         recentrly_view: true,
         trending_product: false
@@ -342,7 +342,7 @@ const Product_data = [
         product_price: "1299",
         product_discount_price: "623",
         product_discount_percenteage: "52%",
-        product_color: "Grey",
+        product_color: "yellow",
         product_size: "30,32,34,36,38",
         recentrly_view: false,
         trending_product: true
@@ -359,7 +359,7 @@ const Product_data = [
         product_price: "11999",
         product_discount_price: "9599",
         product_discount_percenteage: "20%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "28,30,32,34,36",
         recentrly_view: true,
         trending_product: false
@@ -376,7 +376,7 @@ const Product_data = [
         product_price: "1699",
         product_discount_price: "900",
         product_discount_percenteage: "47%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "28,30,32,34,36",
         recentrly_view: true,
         trending_product: false
@@ -393,7 +393,7 @@ const Product_data = [
         product_price: "2399",
         product_discount_price: "1559",
         product_discount_percenteage: "35%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "28,30,32,34,36",
         recentrly_view: false,
         trending_product: true
@@ -410,7 +410,7 @@ const Product_data = [
         product_price: "1799",
         product_discount_price: "827",
         product_discount_percenteage: "54%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "30,32,34,36,38",
         recentrly_view: true,
         trending_product: false
@@ -427,7 +427,7 @@ const Product_data = [
         product_price: "2599",
         product_discount_price: "1689",
         product_discount_percenteage: "35%",
-        product_color: "Blue Dark",
+        product_color: "blue",
         product_size: "28,30,32,34,36",
         recentrly_view: true,
         trending_product: false
@@ -444,7 +444,7 @@ const Product_data = [
         product_price: "3795",
         product_discount_price: "872",
         product_discount_percenteage: "77",
-        product_color: "white",
+        product_color: "orange",
         product_size: "6,7,8,9,10",
         recentrly_view: true,
         trending_product: true
@@ -463,7 +463,7 @@ const Product_data = [
         product_price: "4499",
         product_discount_price: "3149",
         product_discount_percenteage: "30",
-        product_color: "Navy blue",
+        product_color: "blue",
         product_size: "6,7,8,9,10,11",
         recentrly_view: true,
         trending_product: true
@@ -482,7 +482,7 @@ const Product_data = [
         product_price: "4099",
         product_discount_price: "2664",
         product_discount_percenteage: "35",
-        product_color: "white and black",
+        product_color: "orange",
         product_size: "6,7,8,9,10",
         recentrly_view: true,
         trending_product: true
@@ -520,7 +520,7 @@ const Product_data = [
         product_price: "3699",
         product_discount_price: "2219",
         product_discount_percenteage: "40",
-        product_color: "charchol grey",
+        product_color: "yellow",
         product_size: "9",
         recentrly_view: true,
         trending_product: false
@@ -539,7 +539,7 @@ const Product_data = [
         product_price: "2999",
         product_discount_price: "1399",
         product_discount_percenteage: "16",
-        product_color: "white&red",
+        product_color: "orange",
         product_size: "6,7,9,10",
         recentrly_view: true,
         trending_product: false
@@ -558,7 +558,7 @@ const Product_data = [
         product_price: "2399",
         product_discount_price: "1439",
         product_discount_percenteage: "40",
-        product_color: "silver",
+        product_color: "red",
         product_size: "6,7,8,9,10",
         recentrly_view: true,
         trending_product: true
@@ -594,7 +594,7 @@ const Product_data = [
         product_price: "1999",
         product_discount_price: "999",
         product_discount_percenteage: "50",
-        product_color: "black & white",
+        product_color: "black",
         product_size: "8,9",
         recentrly_view: true,
         trending_product: false
@@ -612,7 +612,7 @@ const Product_data = [
         product_price: "3499",
         product_discount_price: "1749",
         product_discount_percenteage: "50",
-        product_color: "grey orange",
+        product_color: "orange",
         product_size: "6,7,8,9,10,11",
         recentrly_view: true,
         trending_product: false
@@ -631,7 +631,7 @@ const Product_data = [
         product_price: "1999",
         product_discount_price: "999",
         product_discount_percenteage: "50%",
-        product_color: "Men Black Solid Denim Jacket",
+        product_color: "black",
         product_size: "S,M,L,XL,XXL",
         recentrly_view: true,
         trending_product: true
@@ -649,7 +649,7 @@ const Product_data = [
         product_price: "2149",
         product_discount_price: "859",
         product_discount_percenteage: "60%",
-        product_color: "GREY",
+        product_color: "yellow",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: true
@@ -666,7 +666,7 @@ const Product_data = [
         product_price: "2999",
         product_discount_price: "2299",
         product_discount_percenteage: "33%",
-        product_color: "BLACK",
+        product_color: "black",
         product_size: "S,M,L,XL,XXL",
         recentrly_view: true,
         trending_product: false
@@ -683,7 +683,7 @@ const Product_data = [
         product_price: "3999",
         product_discount_price: "1399",
         product_discount_percenteage: "65%",
-        product_color: "cream",
+        product_color: "green",
         product_size: "S,M,,XL,XXL",
         recentrly_view: true,
         trending_product: false
@@ -700,7 +700,7 @@ const Product_data = [
         product_price: "3499",
         product_discount_price: "1329",
         product_discount_percenteage: "62%",
-        product_color: "Grey",
+        product_color: "yellow",
         product_size: "S,L,M,XL",
         recentrly_view: true,
         trending_product: false
@@ -717,7 +717,7 @@ const Product_data = [
         product_price: "4999",
         product_discount_price: "",
         product_discount_percenteage: "",
-        product_color: "RED",
+        product_color: "red",
         product_size: "",
         recentrly_view: true,
         trending_product: false
@@ -736,7 +736,7 @@ const Product_data = [
         product_price: "2799",
         product_discount_price: "923",
         product_discount_percenteage: "67%",
-        product_color: "MEN BLACK",
+        product_color: "black",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: false
@@ -753,7 +753,7 @@ const Product_data = [
         product_price: "2699",
         product_discount_price: "998",
         product_discount_percenteage: "63%",
-        product_color: "NAVY BLUE",
+        product_color: "blue",
         product_size: "S,M,L,XL",
         recentrly_view: true,
         trending_product: false
@@ -770,7 +770,7 @@ const Product_data = [
         product_price: "8999",
         product_discount_price: "3599",
         product_discount_percenteage: "60%",
-        product_color: "MEN BLUE",
+        product_color: "blue",
         product_size: "S,M,L,XL,XXL",
         recentrly_view: true,
         trending_product: false
@@ -787,7 +787,7 @@ const Product_data = [
         product_price: "2449",
         product_discount_price: "979",
         product_discount_percenteage: "60%",
-        product_color: "WHITE",
+        product_color: "orange",
         product_size: "S,L,XL",
         recentrly_view: true,
         trending_product: false
@@ -804,7 +804,7 @@ const Product_data = [
         product_price: "2399",
         product_discount_price: "839",
         product_discount_percenteage: "65%",
-        product_color: "Brown",
+        product_color: "red",
         product_size: "onesize",
         recentrly_view: false,
         trending_product: true
@@ -821,7 +821,7 @@ const Product_data = [
         product_price: "2499",
         product_discount_price: "999",
         product_discount_percenteage: "60%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "onesize",
         recentrly_view: true,
         trending_product: false
@@ -838,7 +838,7 @@ const Product_data = [
         product_price: "4550",
         product_discount_price: "3850",
         product_discount_percenteage: "30%",
-        product_color: "light blue",
+        product_color: "blue",
         product_size: "125ml",
         recentrly_view: true,
         trending_product: false
@@ -872,7 +872,7 @@ const Product_data = [
         product_price: "1495",
         product_discount_price: "1196",
         product_discount_percenteage: "20%",
-        product_color: "black&white",
+        product_color: "black",
         product_size: "onesize",
         recentrly_view: true,
         trending_product: false
@@ -889,7 +889,7 @@ const Product_data = [
         product_price: "3999",
         product_discount_price: "839",
         product_discount_percenteage: "79%",
-        product_color: "navy blue",
+        product_color: "blue",
         product_size: "onesize",
         recentrly_view: true,
         trending_product: false
@@ -906,7 +906,7 @@ const Product_data = [
         product_price: "5100",
         product_discount_price: "2550",
         product_discount_percenteage: "50%",
-        product_color: "brown",
+        product_color: "red",
         product_size: "onesize",
         recentrly_view: true,
         trending_product: false
@@ -923,7 +923,7 @@ const Product_data = [
         product_price: "16995",
         product_discount_price: "9347",
         product_discount_percenteage: "45%",
-        product_color: "brown",
+        product_color: "red",
         product_size: "onesize",
         recentrly_view: true,
         trending_product: false
@@ -957,7 +957,7 @@ const Product_data = [
         product_price: "1299",
         product_discount_price: "599",
         product_discount_percenteage: "25%",
-        product_color: "black&gray",
+        product_color: "black",
         product_size: "onesize",
         recentrly_view: true,
         trending_product: true
@@ -974,7 +974,7 @@ const Product_data = [
         product_price: "3,599",
         product_discount_price: "1,799",
         product_discount_percenteage: "50%",
-        product_color: "Yellow",
+        product_color: "yellow",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -991,7 +991,7 @@ const Product_data = [
         product_price: "2,999",
         product_discount_price: "1,499",
         product_discount_percenteage: "50%",
-        product_color: "Pink-orange",
+        product_color: "orange",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1008,7 +1008,7 @@ const Product_data = [
         product_price: "895",
         product_discount_price: "895",
         product_discount_percenteage: "0%",
-        product_color: "Pink",
+        product_color: "green",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1025,7 +1025,7 @@ const Product_data = [
         product_price: "2,999",
         product_discount_price: "749",
         product_discount_percenteage: "75%",
-        product_color: "Rama Green",
+        product_color: "green",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1042,7 +1042,7 @@ const Product_data = [
         product_price: "2,499.00",
         product_discount_price: "599.00",
         product_discount_percenteage: "76%",
-        product_color: "Dark Green",
+        product_color: "green",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1059,7 +1059,7 @@ const Product_data = [
         product_price: "2,199.00",
         product_discount_price: "799.00",
         product_discount_percenteage: "64%",
-        product_color: "Grey",
+        product_color: "yellow",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1076,7 +1076,7 @@ const Product_data = [
         product_price: "4,999.00",
         product_discount_price: "1,000.00",
         product_discount_percenteage: "80",
-        product_color: "Red",
+        product_color: "red",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1093,7 +1093,7 @@ const Product_data = [
         product_price: "899.00",
         product_discount_price: "499.00",
         product_discount_percenteage: "44%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1110,7 +1110,7 @@ const Product_data = [
         product_price: "6,999.00",
         product_discount_price: "799.00",
         product_discount_percenteage: "89%",
-        product_color: "Yellow & black",
+        product_color: "yellow",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1127,7 +1127,7 @@ const Product_data = [
         product_price: "2,799.00",
         product_discount_price: "799.00",
         product_discount_percenteage: "71%",
-        product_color: "White 4",
+        product_color: "orange",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1144,7 +1144,7 @@ const Product_data = [
         product_price: "389.00",
         product_discount_price: "1,799.00",
         product_discount_percenteage: "74%",
-        product_color: "Green",
+        product_color: "green",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1161,7 +1161,7 @@ const Product_data = [
         product_price: "259.00",
         product_discount_price: "1,299.00",
         product_discount_percenteage: "80%",
-        product_color: "Dark-Pink",
+        product_color: "green",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1195,7 +1195,7 @@ const Product_data = [
         product_price: "379.00",
         product_discount_price: "1999.00",
         product_discount_percenteage: "81%",
-        product_color: "White",
+        product_color: "orange",
         product_size: "Slim fit",
         recentrly_view: true,
         trending_product: true
@@ -1212,7 +1212,7 @@ const Product_data = [
         product_price: "420.00",
         product_discount_price: "1200.00",
         product_discount_percenteage: "65%",
-        product_color: "White",
+        product_color: "orange",
         product_size: "Slim fit",
         recentrly_view: true,
         trending_product: true
@@ -1229,7 +1229,7 @@ const Product_data = [
         product_price: "399.00",
         product_discount_price: "1599.00",
         product_discount_percenteage: "75%",
-        product_color: "Yellow",
+        product_color: "yellow",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1246,7 +1246,7 @@ const Product_data = [
         product_price: "349.00",
         product_discount_price: "1599.00",
         product_discount_percenteage: "78%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1263,7 +1263,7 @@ const Product_data = [
         product_price: "299.00",
         product_discount_price: "799.00",
         product_discount_percenteage: "63%",
-        product_color: "Frost White",
+        product_color: "orange",
         product_size: "Slim fit",
         recentrly_view: true,
         trending_product: true
@@ -1280,7 +1280,7 @@ const Product_data = [
         product_price: "349.00",
         product_discount_price: "1230.00",
         product_discount_percenteage: "72%",
-        product_color: "Multicolour",
+        product_color: "yellow",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1297,7 +1297,7 @@ const Product_data = [
         product_price: "399.00",
         product_discount_price: "1599.00",
         product_discount_percenteage: "75%",
-        product_color: "Multicolour",
+        product_color: "yellow",
         product_size: "Regular fit",
         recentrly_view: true,
         trending_product: true
@@ -1314,7 +1314,7 @@ const Product_data = [
         product_price: "799",
         product_discount_price: "",
         product_discount_percenteage: "",
-        product_color: "light blue",
+        product_color: "blue",
         product_size: "28",
         recentrly_view: true,
         trending_product: true
@@ -1332,7 +1332,7 @@ const Product_data = [
         product_price: "1299",
         product_discount_price: "1100",
         product_discount_percenteage: "",
-        product_color: "light blue",
+        product_color: "blue",
         product_size: "28",
         recentrly_view: true,
         trending_product: true
@@ -1351,7 +1351,7 @@ const Product_data = [
         product_price: "1299",
         product_discount_price: "1100",
         product_discount_percenteage: "",
-        product_color: "Dark blue",
+        product_color: "blue",
         product_size: "28",
         recentrly_view: true,
         trending_product: true
@@ -1368,7 +1368,7 @@ const Product_data = [
         product_price: "1699",
         product_discount_price: "1400",
         product_discount_percenteage: "",
-        product_color: "Dark blue",
+        product_color: "blue",
         product_size: "29",
         recentrly_view: true,
         trending_product: true
@@ -1386,7 +1386,7 @@ const Product_data = [
         product_price: "1699",
         product_discount_price: "1599",
         product_discount_percenteage: "",
-        product_color: "Gray Blue",
+        product_color: "blue",
         product_size: "27",
         recentrly_view: true,
         trending_product: true
@@ -1404,7 +1404,7 @@ const Product_data = [
         product_price: "1699",
         product_discount_price: "1400",
         product_discount_percenteage: "",
-        product_color: "Dark blue",
+        product_color: "blue",
         product_size: "28",
         recentrly_view: true,
         trending_product: true
@@ -1422,7 +1422,7 @@ const Product_data = [
         product_price: "1699",
         product_discount_price: "1400",
         product_discount_percenteage: "",
-        product_color: "Dark blue",
+        product_color: "blue",
         product_size: "28",
         recentrly_view: true,
         trending_product: true
@@ -1490,7 +1490,7 @@ const Product_data = [
         product_price: "1799",
         product_discount_price: "799",
         product_discount_percenteage: "56",
-        product_color: "Brown",
+        product_color: "red",
         product_size: "8UK",
         recentrly_view: false,
         trending_product: true,
@@ -1509,7 +1509,7 @@ const Product_data = [
         product_price: "800",
         product_discount_price: "400",
         product_discount_percenteage: "50",
-        product_color: "Gray",
+        product_color: "yellow",
         product_size: "7UK",
         recentrly_view: true,
         trending_product: true,
@@ -1526,7 +1526,7 @@ const Product_data = [
         product_price: "1000",
         product_discount_price: "499",
         product_discount_percenteage: "50",
-        product_color: "Orange",
+        product_color: "orange",
         product_size: "7UK",
         recentrly_view: true,
         trending_product: true,
@@ -1543,7 +1543,7 @@ const Product_data = [
         product_price: "2000",
         product_discount_price: "999",
         product_discount_percenteage: "50",
-        product_color: "Brown",
+        product_color: "red",
         product_size: "8UK",
         recentrly_view: false,
         trending_product: true,
@@ -1560,7 +1560,7 @@ const Product_data = [
         product_price: "2000",
         product_discount_price: "999",
         product_discount_percenteage: "50",
-        product_color: "White",
+        product_color: "orange",
         product_size: "7UK",
         recentrly_view: false,
         trending_product: true,
@@ -1577,7 +1577,7 @@ const Product_data = [
         product_price: "3299",
         product_discount_price: "2639",
         product_discount_percenteage: "20",
-        product_color: "Red",
+        product_color: "red",
         product_size: "7UK",
         recentrly_view: true,
         trending_product: true,
@@ -1594,7 +1594,7 @@ const Product_data = [
         product_price: "1499",
         product_discount_price: "749",
         product_discount_percenteage: "50",
-        product_color: "Red",
+        product_color: "red",
         product_size: "7UK",
         recentrly_view: true,
         trending_product: true,
@@ -1611,7 +1611,7 @@ const Product_data = [
         product_price: "3895",
         product_discount_price: "2726",
         product_discount_percenteage: "30",
-        product_color: "Brown",
+        product_color: "red",
         product_size: "7UK",
         recentrly_view: true,
         trending_product: true,
@@ -1629,7 +1629,7 @@ const Product_data = [
         product_price: "1600",
         product_discount_price: "799",
         product_discount_percenteage: "50",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "7UK",
         recentrly_view: true,
         trending_product: true,
@@ -1646,7 +1646,7 @@ const Product_data = [
         product_price: "3000",
         product_discount_price: "1499",
         product_discount_percenteage: "50",
-        product_color: "Red",
+        product_color: "red",
         product_size: "9UK",
         recentrly_view: false,
         trending_product: true,
@@ -1680,7 +1680,7 @@ const Product_data = [
         product_price: "2,849.00",
         product_discount_price: "997",
         product_discount_percenteage: "65%",
-        product_color: "Silver",
+        product_color: "red",
         product_size: "NA",
         recentrly_view: true,
         trending_product: true
@@ -1697,7 +1697,7 @@ const Product_data = [
         product_price: "599.00",
         product_discount_price: "499.00",
         product_discount_percenteage: "17% ",
-        product_color: "	Multicolor",
+        product_color: "Multicolor",
         product_size: "NA",
         recentrly_view: true,
         trending_product: true
@@ -1711,10 +1711,10 @@ const Product_data = [
         product_rating: "3.0",
         product_rating_count: "2234",
         product_img: "https://m.media-amazon.com/images/I/71upm73OSlS._UY575_.jpg",
-        product_price: "₹999",
+        product_price: "999",
         product_discount_price: "119.00",
         product_discount_percenteage: "88%",
-        product_color: "White",
+        product_color: "orange",
         product_size: "NA",
         recentrly_view: true,
         trending_product: true
@@ -1748,7 +1748,7 @@ const Product_data = [
         product_price: "1,199.00",
         product_discount_price: "245.00",
         product_discount_percenteage: "80%",
-        product_color: "Golden and silver",
+        product_color: "Golden",
         product_size: "NA",
         recentrly_view: true,
         trending_product: true
@@ -1765,7 +1765,7 @@ const Product_data = [
         product_price: "65,960.00",
         product_discount_price: "56,120.00",
         product_discount_percenteage: "15%",
-        product_color: "Gold",
+        product_color: "Golden",
         product_size: "NA",
         recentrly_view: false,
         trending_product: true
@@ -1779,10 +1779,10 @@ const Product_data = [
         product_rating: "3.8",
         product_rating_count: "92892",
         product_img: "https://m.media-amazon.com/images/I/714fIkdqr7L._UY575_.jpg",
-        product_price: "₹1,999.00",
+        product_price: "1,999.00",
         product_discount_price: "299.00",
         product_discount_percenteage: "85%",
-        product_color: "Other Color",
+        product_color: "Other",
         product_size: "NA",
         recentrly_view: true,
         trending_product: true
@@ -1796,10 +1796,10 @@ const Product_data = [
         product_rating: "3.4",
         product_rating_count: "23871",
         product_img: "https://m.media-amazon.com/images/I/61Yi-0OfYDL._UY575_.jpg",
-        product_price: " ₹5,999.00",
+        product_price: "5,999.00",
         product_discount_price: "1,499.00",
         product_discount_percenteage: "75%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "NA",
         recentrly_view: true,
         trending_product: true
@@ -1815,9 +1815,9 @@ const Product_data = [
         product_img: "https://m.media-amazon.com/images/I/41lbuBlxLLL.jpg",
         product_price: "2,62,000.00",
 
-        product_discount_price: "₹1,31,000.00",
+        product_discount_price: "1,31,000.00",
         product_discount_percenteage: "50%",
-        product_color: "Brown",
+        product_color: "red",
         product_size: "NA",
         recentrly_view: false,
         trending_product: true
@@ -1834,7 +1834,7 @@ const Product_data = [
         product_price: "1999",
         product_discount_price: "419",
         product_discount_percenteage: "79%",
-        product_color: "Green",
+        product_color: "green",
         product_size: "3-6 Years",
         recentrly_view: true,
         trending_product: true
@@ -1851,7 +1851,7 @@ const Product_data = [
         product_price: "1599",
         product_discount_price: "649",
         product_discount_percenteage: "59%",
-        product_color: "RoyalBlue",
+        product_color: "blue",
         product_size: "4-5 Years",
         recentrly_view: true,
         trending_product: true
@@ -1868,7 +1868,7 @@ const Product_data = [
         product_price: "1998",
         product_discount_price: "775",
         product_discount_percenteage: "61%",
-        product_color: "Multi",
+        product_color: "yellow",
         product_size: "4-5 Years",
         recentrly_view: true,
         trending_product: true
@@ -1885,7 +1885,7 @@ const Product_data = [
         product_price: "2399",
         product_discount_price: "875",
         product_discount_percenteage: "64%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "2-3 Years",
         recentrly_view: false,
         trending_product: true
@@ -1902,7 +1902,7 @@ const Product_data = [
         product_price: "999",
         product_discount_price: "359",
         product_discount_percenteage: "64%",
-        product_color: "Green",
+        product_color: "green",
         product_size: "5-6 Years",
         recentrly_view: true,
         trending_product: true
@@ -1919,7 +1919,7 @@ const Product_data = [
         product_price: "999",
         product_discount_price: "329",
         product_discount_percenteage: "67%",
-        product_color: "Blood Red",
+        product_color: "red",
         product_size: "2-3 Years",
         recentrly_view: true,
         trending_product: true
@@ -1936,7 +1936,7 @@ const Product_data = [
         product_price: "599",
         product_discount_price: "489",
         product_discount_percenteage: "18%",
-        product_color: "Multi Color",
+        product_color: "yellow",
         product_size: "2-3 Years",
         recentrly_view: true,
         trending_product: true
@@ -1953,7 +1953,7 @@ const Product_data = [
         product_price: "999",
         product_discount_price: "259",
         product_discount_percenteage: "74%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "12-18 Months",
         recentrly_view: false,
         trending_product: true
@@ -1970,7 +1970,7 @@ const Product_data = [
         product_price: "599",
         product_discount_price: "239",
         product_discount_percenteage: "60%",
-        product_color: "Grey",
+        product_color: "yellow",
         product_size: "0-3 Months",
         recentrly_view: true,
         trending_product: true
@@ -1987,7 +1987,7 @@ const Product_data = [
         product_price: "1049",
         product_discount_price: "439",
         product_discount_percenteage: "58%",
-        product_color: "Yellow",
+        product_color: "yellow",
         product_size: "3-6 Months",
         recentrly_view: true,
         trending_product: true
@@ -2004,7 +2004,7 @@ const Product_data = [
         product_price: "400",
         product_discount_price: "40",
         product_discount_percenteage: "10%",
-        product_color: "Yellow",
+        product_color: "yellow",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2021,7 +2021,7 @@ const Product_data = [
         product_price: "500",
         product_discount_price: "50",
         product_discount_percenteage: "10%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2038,7 +2038,7 @@ const Product_data = [
         product_price: "1000",
         product_discount_price: "500",
         product_discount_percenteage: "50%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2055,7 +2055,7 @@ const Product_data = [
         product_price: "2000",
         product_discount_price: "500",
         product_discount_percenteage: "25%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "Small",
         recentrly_view: false,
         trending_product: true
@@ -2072,7 +2072,7 @@ const Product_data = [
         product_price: "400",
         product_discount_price: "40",
         product_discount_percenteage: "10%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2089,7 +2089,7 @@ const Product_data = [
         product_price: "200",
         product_discount_price: "100",
         product_discount_percenteage: "50%",
-        product_color: "Red",
+        product_color: "red",
         product_size: "Medium",
         recentrly_view: false,
         trending_product: true
@@ -2106,7 +2106,7 @@ const Product_data = [
         product_price: "99",
         product_discount_price: "0",
         product_discount_percenteage: "0%",
-        product_color: "Black-Blue",
+        product_color: "black",
         product_size: "Medium",
         recentrly_view: true,
         trending_product: true
@@ -2123,7 +2123,7 @@ const Product_data = [
         product_price: "300",
         product_discount_price: "60",
         product_discount_percenteage: "20%",
-        product_color: "Wooden",
+        product_color: "green",
         product_size: "Small",
         recentrly_view: false,
         trending_product: true
@@ -2140,7 +2140,7 @@ const Product_data = [
         product_price: "50",
         product_discount_price: "0",
         product_discount_percenteage: "0%",
-        product_color: "Skin",
+        product_color: "green",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2157,7 +2157,7 @@ const Product_data = [
         product_price: "100",
         product_discount_price: "10",
         product_discount_percenteage: "10%",
-        product_color: "Multi-Color",
+        product_color: "yellow",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2174,7 +2174,7 @@ const Product_data = [
         product_price: "899",
         product_discount_price: "349",
         product_discount_percenteage: "61%",
-        product_color: "pink",
+        product_color: "green",
         product_size: "",
         recentrly_view: true,
         trending_product: true
@@ -2259,7 +2259,7 @@ const Product_data = [
         product_price: "440",
         product_discount_price: "419",
         product_discount_percenteage: "5%",
-        product_color: "pink",
+        product_color: "green",
         product_size: "",
         recentrly_view: true,
         trending_product: true
@@ -2293,7 +2293,7 @@ const Product_data = [
         product_price: "999",
         product_discount_price: "775",
         product_discount_percenteage: "22%",
-        product_color: "pink",
+        product_color: "green",
         product_size: "",
         recentrly_view: true,
         trending_product: true
@@ -2344,7 +2344,7 @@ const Product_data = [
         product_price: "77",
         product_discount_price: "14",
         product_discount_percenteage: "20%",
-        product_color: "Red",
+        product_color: "red",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2361,7 +2361,7 @@ const Product_data = [
         product_price: "200",
         product_discount_price: "125",
         product_discount_percenteage: "75%",
-        product_color: "Wooden",
+        product_color: "green",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2395,7 +2395,7 @@ const Product_data = [
         product_price: "500",
         product_discount_price: "0",
         product_discount_percenteage: "0%",
-        product_color: "Pink",
+        product_color: "green",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2412,7 +2412,7 @@ const Product_data = [
         product_price: "800",
         product_discount_price: "80",
         product_discount_percenteage: "10%",
-        product_color: "Pink",
+        product_color: "green",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2429,7 +2429,7 @@ const Product_data = [
         product_price: "1000",
         product_discount_price: "100",
         product_discount_percenteage: "10%",
-        product_color: "Orange",
+        product_color: "orange",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2446,7 +2446,7 @@ const Product_data = [
         product_price: "350",
         product_discount_price: "35",
         product_discount_percenteage: "10%",
-        product_color: "White",
+        product_color: "orange",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2463,7 +2463,7 @@ const Product_data = [
         product_price: "650",
         product_discount_price: "130",
         product_discount_percenteage: "20%",
-        product_color: "White",
+        product_color: "orange",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2480,7 +2480,7 @@ const Product_data = [
         product_price: "750",
         product_discount_price: "140",
         product_discount_percenteage: "20%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2497,7 +2497,7 @@ const Product_data = [
         product_price: "850",
         product_discount_price: "85",
         product_discount_percenteage: "10%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "Small",
         recentrly_view: true,
         trending_product: true
@@ -2531,7 +2531,7 @@ const Product_data = [
         product_price: "1839",
         product_discount_price: "1025",
         product_discount_percenteage: "44%",
-        product_color: "Pink",
+        product_color: "green",
         product_size: "18-24 Months",
         recentrly_view: true,
         trending_product: true
@@ -2548,7 +2548,7 @@ const Product_data = [
         product_price: "1499",
         product_discount_price: "799",
         product_discount_percenteage: "47%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "18-24 Months",
         recentrly_view: true,
         trending_product: true
@@ -2565,7 +2565,7 @@ const Product_data = [
         product_price: "1979",
         product_discount_price: "1199",
         product_discount_percenteage: "39%",
-        product_color: "Red",
+        product_color: "red",
         product_size: "6-12 Months",
         recentrly_view: true,
         trending_product: true
@@ -2582,7 +2582,7 @@ const Product_data = [
         product_price: "999",
         product_discount_price: "725",
         product_discount_percenteage: "27%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "3-6 Months",
         recentrly_view: true,
         trending_product: true
@@ -2599,7 +2599,7 @@ const Product_data = [
         product_price: "999",
         product_discount_price: "419",
         product_discount_percenteage: "58%",
-        product_color: "Blue",
+        product_color: "blue",
         product_size: "0-3 Months",
         recentrly_view: true,
         trending_product: true
@@ -2616,7 +2616,7 @@ const Product_data = [
         product_price: "699",
         product_discount_price: "439",
         product_discount_percenteage: "37%",
-        product_color: "Black",
+        product_color: "black",
         product_size: "18-24 Months",
         recentrly_view: true,
         trending_product: true
@@ -2633,7 +2633,7 @@ const Product_data = [
         product_price: "1299",
         product_discount_price: "539",
         product_discount_percenteage: "59%",
-        product_color: "Multi Color",
+        product_color: "MultiColor",
         product_size: "3-6 Months",
         recentrly_view: true,
         trending_product: true
@@ -2667,7 +2667,7 @@ const Product_data = [
         product_price: "1199",
         product_discount_price: "875",
         product_discount_percenteage: "27%",
-        product_color: "Green",
+        product_color: "green",
         product_size: "3-6 Months",
         recentrly_view: true,
         trending_product: true

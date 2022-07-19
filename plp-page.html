@@ -12,17 +12,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="js/jquery.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="json_data.js"></script>
     <title></title>
-
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
 
-
+    </script>
     <style>
         .accordion-item {
             border: none !important;
@@ -43,12 +47,16 @@
         .firstBarMenu ul li:hover {
             color: rgb(204, 46, 46);
         }
+
+        .inputOfRange {
+            border: none;
+        }
     </style>
     <script>
-
+        var details = [];
         $(document).ready(function () {
 
-            var details = [];
+
             var queryString = window.location.search;
             const product_detail_param = new URLSearchParams(queryString);
             var cat_id = product_detail_param.get("cat_id");
@@ -87,6 +95,130 @@
             })
         });
 
+        /* the price filter started */
+        function getprice() {
+            let newPriceOne = document.getElementById("minimunPriceValue").value;
+            let newPriceTwo = document.getElementById("maximunPriceValue").value;
+            console.log(newPriceOne, newPriceTwo);
+            details = [];
+            for (let i = 0; i < Product_data.length; i++) {
+                // console.log("hfhfhg", parseInt(Product_data[i].product_price))
+                if (parseInt(newPriceOne) < parseInt(Product_data[i].product_discount_price) && parseInt(newPriceTwo) > parseInt(Product_data[i].product_discount_price)) {
+                    details.push(Product_data[i]);
+                    // console.log(Product_data[i].product_discount_price)
+                }
+
+            }
+            // console.log(details)
+            document.getElementById("product_item").innerHTML = "";
+            for (let i = 0; i < details.length; i++) {
+
+
+                // details.forEach(function (value, index) {
+                document.getElementById("product_item").innerHTML += `<div  class="trending_content_product col-3 p-0 m-0">
+               <a href="pdp.html?product_id=${details[i].product_id}" style="text-decoration:none;"> <div class="trending_content_product_box">
+                    <img
+                        src="${details[i].product_img}">
+                        <div class="product_description_content">
+                            <p class="product_description">${details[i].product_description}</p>
+                            <div class="product_review d-flex">
+                                <i sty class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="product_prize d-flex">
+                                <p class="product_strike">RS${details[i].product_price} </p>
+                                <p>RS${details[i].product_discount_price}</p>
+                                <button class="prizeoff_btn">${details[i].product_discount_percenteage} OFF</button>
+                            </div>
+                        </div>
+                </div></a>   </div>`;
+                // })
+
+            }
+        }
+
+        /* the color filter started */
+
+        function getColor(colorName) {
+            let newColorName = colorName;
+            details = []
+            for (let i = 0; i < Product_data.length; i++) {
+                if (newColorName === Product_data[i].product_color) {
+                    details.push(Product_data[i]);
+                }
+            }
+            console.log("fsfsfs", details);
+            document.getElementById("product_item").innerHTML = "";
+            details.forEach(function (value, index) {
+                document.getElementById("product_item").innerHTML += `<div  class="trending_content_product col-3 p-0 m-0">
+           <a href="pdp.html?product_id=${value.product_id}" style="text-decoration:none;"> <div class="trending_content_product_box">
+                <img
+                    src="${value.product_img}">
+                    <div class="product_description_content">
+                        <p class="product_description">${value.product_description}</p>
+                        <div class="product_review d-flex">
+                            <i sty class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="product_prize d-flex">
+                            <p class="product_strike">RS${value.product_price} </p>
+                            <p>RS${value.product_discount_price}</p>
+                            <button class="prizeoff_btn">${value.product_discount_percenteage} OFF</button>
+                        </div>
+                    </div>
+            </div></a>   </div>`;
+            })
+
+
+        }
+        /* the rate filter started */
+
+        function getRate(rateNumber) {
+            let newRateNumber = parseInt(rateNumber);
+            console.log("new number", newRateNumber)
+            details = []
+            for (let i = 0; i < Product_data.length; i++) {
+                console.log("rattings-----------", parseFloat(Product_data[i].product_rating))
+                if (newRateNumber <= Product_data[i].product_rating) {
+                    details.push(Product_data[i])
+                }
+                /* if (newRateNumber === Product_data[i].product_rating) {
+                    details.push(Product_data[i]);
+                } */
+            }
+            console.log("new-detialsssss----------", details);
+            document.getElementById("product_item").innerHTML = "";
+            details.forEach(function (value, index) {
+                document.getElementById("product_item").innerHTML += `<div  class="trending_content_product col-3 p-0 m-0">
+           <a href="pdp.html?product_id=${value.product_id}" style="text-decoration:none;"> <div class="trending_content_product_box">
+                <img
+                    src="${value.product_img}">
+                    <div class="product_description_content">
+                        <p class="product_description">${value.product_description}</p>
+                        <div class="product_review d-flex">
+                            <i sty class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <div class="product_prize d-flex">
+                            <p class="product_strike">RS${value.product_price} </p>
+                            <p>RS${value.product_discount_price}</p>
+                            <button class="prizeoff_btn">${value.product_discount_percenteage} OFF</button>
+                        </div>
+                    </div>
+            </div></a>   </div>`;
+            })
+        }
+
+        /* the price range bar filter started */
 
     </script>
 </head>
@@ -198,24 +330,40 @@
                                     <div class="py-1 d-flex justify-content-between">
                                         <div>Price</div>
                                         <div>-</div>
-                                        <!--  <hr style="height:5px; color:black ;"> -->
-                                    </div>
-                                    <input style="width:100%;" type="range" class="form-control-range"
-                                        id="formControlRange">
-                                    <div class="py-1 d-flex justify-content-between">
-                                        <div>Rs. 199</div>
-                                        <div>Rs. 2000</div>
                                     </div>
                                     <div class="py-1 d-flex justify-content-between">
                                         <div>
-                                            <div class="d-flex justify-content-between"> <input style="width:40%;"
-                                                    type="email" class="form-control" id="exampleInputEmail1"
-                                                    aria-describedby="emailHelp" placeholder="Rs."> <input
-                                                    style="width:40%;" type="email" class="form-control"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                    placeholder="Rs."></div>
+                                            <select class="form-control" name="" id="minimunPriceValue">
+                                                <option value="100">1</option>
+                                                <option value="300">300</option>
+                                                <option value="600">600</option>
+                                                <option value="1000">1000</option>
+                                                <option value="1500">1500</option>
+                                                <option value="2000">2000</option>
+                                                <option value="5000">5000</option>
+                                               
+                                            </select>
                                         </div>
-                                        <div><button type="submit" class="btn btn-outline-secondary  mx-3">GO</button>
+                                        <div>
+                                            <select class="form-control" name="" id="maximunPriceValue">
+                                                <option value="299">299</option>
+                                                <option value="599">599</option>
+                                                <option value="999">999</option>
+                                                <option value="1500">1500</option>
+                                                <option value="2000">2000</option>
+                                                <option value="5000">5000</option>
+                                                <option value="10000">10000</option>
+                                              
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                        <div class="py-2 m-1 d-flex justify-content-center">
+
+                                            <div><button onclick="getprice()" type="submit"
+                                                    class="btn btn-outline-secondary  mx-3">GO</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +372,88 @@
                                         <div>Customer Rating</div>
                                         <div>-</div>
                                     </div>
-                                    <div class="py-1 d-flex justify-content-between">
+                                    <div class="py-1 d-flex justify-content-between" onclick="getRate('1')">
+                                        <div class=" d-flex" style="font-size:12px ;">
+                                            <div class="px-1" style="background: #fff;
+                                        width: 17px;
+                                        height: 17px;
+                                        border: 1px solid #e5e5e5;
+                                        display: inline-block;
+                                        margin-right: 5px;
+                                        border-radius: 100%;">
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                                            <div class="px-2">
+                                                & Up
+                                            </div>
+
+                                        </div>
+                                        <div style="font-size:12px ;">69</div>
+                                    </div>
+                                    <div class="py-1 d-flex justify-content-between" onclick="getRate('2')">
+                                        <div class=" d-flex" style="font-size:12px ;">
+                                            <div class="px-1" style="background: #fff;
+                                        width: 17px;
+                                        height: 17px;
+                                        border: 1px solid #e5e5e5;
+                                        display: inline-block;
+                                        margin-right: 5px;
+                                        border-radius: 100%;">
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                                            <div class="px-2">
+                                                & Up
+                                            </div>
+
+                                        </div>
+                                        <div style="font-size:12px ;">69</div>
+                                    </div>
+                                    <div class="py-1 d-flex justify-content-between" onclick="getRate('3')">
+                                        <div class=" d-flex" style="font-size:12px ;">
+                                            <div class="px-1" style="background: #fff;
+                                        width: 17px;
+                                        height: 17px;
+                                        border: 1px solid #e5e5e5;
+                                        display: inline-block;
+                                        margin-right: 5px;
+                                        border-radius: 100%;">
+                                            </div>
+                                            <div>
+                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
+                                            </div>
+                                            <div class="px-2">
+                                                & Up
+                                            </div>
+
+                                        </div>
+                                        <div style="font-size:12px ;">69</div>
+                                    </div>
+                                    <div class="py-1 d-flex justify-content-between" onclick="getRate('4')">
                                         <div class=" d-flex" style="font-size:12px ;">
                                             <div class="px-1" style="background: #fff;
                                         width: 17px;
@@ -239,7 +468,8 @@
                                                 <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
                                                 <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
                                                 <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
+                                                <i class="fa fa-star" style="color: rgb(229, 221, 221);"
+                                                    aria-hidden="true"></i>
                                             </div>
                                             <div class="px-2">
                                                 & Up
@@ -248,55 +478,7 @@
                                         </div>
                                         <div style="font-size:12px ;">69</div>
                                     </div>
-                                    <div class="py-1 d-flex justify-content-between">
-                                        <div class=" d-flex" style="font-size:12px ;">
-                                            <div class="px-1" style="background: #fff;
-                                        width: 17px;
-                                        height: 17px;
-                                        border: 1px solid #e5e5e5;
-                                        display: inline-block;
-                                        margin-right: 5px;
-                                        border-radius: 100%;">
-                                            </div>
-                                            <div>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="px-2">
-                                                & Up
-                                            </div>
-
-                                        </div>
-                                        <div style="font-size:12px ;">69</div>
-                                    </div>
-                                    <div class="py-1 d-flex justify-content-between">
-                                        <div class=" d-flex" style="font-size:12px ;">
-                                            <div class="px-1" style="background: #fff;
-                                        width: 17px;
-                                        height: 17px;
-                                        border: 1px solid #e5e5e5;
-                                        display: inline-block;
-                                        margin-right: 5px;
-                                        border-radius: 100%;">
-                                            </div>
-                                            <div>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                                <i class="fa fa-star" style="color: orange;" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="px-2">
-                                                & Up
-                                            </div>
-
-                                        </div>
-                                        <div style="font-size:12px ;">69</div>
-                                    </div>
-                                    <div class="py-1 d-flex justify-content-between">
+                                    <div class="py-1 d-flex justify-content-between" onclick="getRate('5')">
                                         <div class=" d-flex" style="font-size:12px ;">
                                             <div class="px-1" style="background: #fff;
                                         width: 17px;
@@ -681,7 +863,8 @@
                                             <div id="collapseTwo" class="accordion-collapse collapse"
                                                 aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    <div class="py-1 d-flex justify-content-between">
+                                                    <div class="py-1 d-flex justify-content-between"
+                                                        onclick="getColor('black')">
                                                         <div class=" d-flex" style="font-size:12px ;">
                                                             <div class="px-1" style="background: #fff;
                                                     width: 17px;
@@ -707,7 +890,8 @@
                                                         </div>
                                                         <div style="font-size:12px ;">6</div>
                                                     </div>
-                                                    <div class="py-1 d-flex justify-content-between">
+                                                    <div class="py-1 d-flex justify-content-between"
+                                                        onclick="getColor('orange')">
                                                         <div class=" d-flex" style="font-size:12px ;">
                                                             <div class="px-1" style="background: #fff;
                                                     width: 17px;
@@ -733,7 +917,8 @@
                                                         </div>
                                                         <div style="font-size:12px ;">6</div>
                                                     </div>
-                                                    <div class="py-1 d-flex justify-content-between">
+                                                    <div class="py-1 d-flex justify-content-between"
+                                                        onclick="getColor('blue')">
                                                         <div class=" d-flex" style="font-size:12px ;">
                                                             <div class="px-1" style="background: #fff;
                                                     width: 17px;
@@ -759,7 +944,8 @@
                                                         </div>
                                                         <div style="font-size:12px ;">6</div>
                                                     </div>
-                                                    <div class="py-1 d-flex justify-content-between">
+                                                    <div class="py-1 d-flex justify-content-between"
+                                                        onclick="getColor('green')">
                                                         <div class=" d-flex" style="font-size:12px ;">
                                                             <div class="px-1" style="background: #fff;
                                                     width: 17px;
@@ -785,7 +971,8 @@
                                                         </div>
                                                         <div style="font-size:12px ;">6</div>
                                                     </div>
-                                                    <div class="py-1 d-flex justify-content-between">
+                                                    <div class="py-1 d-flex justify-content-between"
+                                                        onclick="getColor('yellow')">
                                                         <div class=" d-flex" style="font-size:12px ;">
                                                             <div class="px-1" style="background: #fff;
                                                     width: 17px;
@@ -806,6 +993,33 @@
                                                             <div class="px-2">
 
                                                                 Yellow
+                                                            </div>
+
+                                                        </div>
+                                                        <div style="font-size:12px ;">6</div>
+                                                    </div>
+                                                    <div class="py-1 d-flex justify-content-between"
+                                                        onclick="getColor('red')">
+                                                        <div class=" d-flex" style="font-size:12px ;">
+                                                            <div class="px-1" style="background: #fff;
+                                                    width: 17px;
+                                                    height: 17px;
+                                                    border: 1px solid #e5e5e5;
+                                                    display: inline-block;
+                                                    margin-right: 5px;
+                                                    ">
+                                                            </div>
+                                                            <div class="px-1" style="background: #fff;
+                                                    width: 17px;
+                                                    height: 17px;
+                                                    background-color: red;
+                                                    display: inline-block;
+                                                    margin-right: 5px;
+                                                    ">
+                                                            </div>
+                                                            <div class="px-2">
+
+                                                                Red
                                                             </div>
 
                                                         </div>
