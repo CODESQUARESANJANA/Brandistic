@@ -205,16 +205,18 @@
     crossorigin="anonymous"></script>
 
   <script>
+    var details = [];
+    var product_id = "";
     $(document).ready(function () {
+
       function question_Alert() {
         alert(
           "Sorry for in convience! This section is under maintainence, this section will be available in few weeks! Thank you for your patience.."
         );
       }
-      var details = [];
       var queryString = window.location.search;
       const product_detail_param = new URLSearchParams(queryString);
-      var product_id = product_detail_param.get("product_id");
+      product_id = product_detail_param.get("product_id");
       console.log("pro_id", product_id);
       Product_data.forEach(function (value, index) {
         if (value.product_id === product_id) {
@@ -236,7 +238,111 @@
               src="${details[0].product_img}"
               style="width: 100%; margin-top: 28px; height: 500px; object-fit:contain;"
             />`;
+
+            var review_Data = JSON.parse(localStorage.getItem("review_data"))
+            review_Data.forEach(element => {
+        if (product_id == element.product_id) {
+          document.getElementById("comment_Section").innerHTML += `<div class="row">
+             <div class="col-1">
+              <img style="height: 30%; padding-left: 56%;" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-star-web-flaticons-lineal-color-flat-icons-5.png"/>
+             </div>
+
+             <div class="col-6 d-flex">
+               <p style="color: gray;">${element.added_Review}</p>
+            </div>
+             <div class="d-flex">
+               <p style="color: gray; font-size:small; padding-left: 10%;">Rima &nbsp;&nbsp;on <p style="color: gray; font-size:small; padding-left: 1%;">${date}</p> </p>
+            </div>
+           </div>`;
+        }
+      });
+
+      var local_data = JSON.parse(localStorage.getItem("cart_data"))
+      var cart_length = local_data.length;
+      document.getElementById("showing_cartI").innerHTML += `${cart_length}` ;
+
     });
+
+    function add_To_Cart() {
+      console.log("dsdsdsd")
+
+      const product_obj = {
+        product_id: details[0].product_id,
+        product_description: details[0].product_description,
+        product_price: details[0].product_discount_price,
+        product_img: details[0].product_img,
+      }
+      
+      var local_data = JSON.parse(localStorage.getItem("cart_data"))
+      var new_obj = local_data === null ? [] : local_data
+      new_obj.push(product_obj)
+      localStorage.setItem("cart_data", JSON.stringify(new_obj))
+    }
+
+
+    function addReview() {
+      console.log("add review function");
+      var review_Array = [];
+      const review_text = document.getElementById("review_Input").value;
+      const product_review = {
+        product_id: details[0].product_id,
+        added_Review: review_text
+      }
+      var review_Data = JSON.parse(localStorage.getItem("review_data"))
+      var new_review = review_Data === null ? [] : review_Data
+      new_review.push(product_review)
+      localStorage.setItem("review_data", JSON.stringify(new_review))
+
+    }
+
+    
+    var today = new Date();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    console.log(today);
+
+    
+
+
+
+    // var review_Array = [];
+    // function addReview() {
+    //   var queryString = window.location.search;
+    //   const product_detail_param = new URLSearchParams(queryString);
+    //   var product_id = product_detail_param.get("product_id");
+    //   var pro_Review = document.getElementById("review_Input").value;
+
+    //   const reviews_json = {
+    //     'pid': product_id,
+    //     'text': pro_Review
+    //   };
+
+    //   localStorage.setItem("reviews_json", JSON.stringify(reviews_json));
+    //   review_Array.push(reviews_json);
+    //   localStorage.setItem("arr", JSON.stringify(review_Array));
+
+
+    //   for (i = 0; i < review_Array.length; i++) {
+    //     if (review_Array[i].pid == product_id) {
+    //       $('#comment_Section').append(`<div class="row">
+    //         <div class="col-1">
+    //           <img style="height: 30%; padding-left: 56%;" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-star-web-flaticons-lineal-color-flat-icons-5.png"/>
+    //         </div>
+
+    //         <div class="col-6 d-flex">
+    //           <p style="color: gray;">${pro_Review}</p>
+    //         </div>
+    //         <div class="d-flex">
+    //           <p style="color: gray; font-size:small; padding-left: 10%;">Rima | 10 July 2022</p>
+    //         </div>
+    //       </div>`);
+
+    //     }
+    //   }
+    // }
+
+
+
+
 
       // let url = window.location.href;
       // console.log("pddd",url);
@@ -284,7 +390,7 @@
       <div class="col-sm-1" style="border-right: 1px solid #c7003d">
         <span id="cart" class="text-light">
           <div style="cursor: pointer">
-            <span id="carting">Cart</span><img src="images/cart-1.png" />
+            <span id="carting">Cart</span><img src="images/cart-1.png" /><sup><span id="showing_cartI"></span></sup>
           </div>
         </span>
       </div>
@@ -383,7 +489,7 @@
           <!--Here the button and delivery will shown-->
           <div class="row" style="background-color: #fbfbfb">
             <div class="col" style="margin-right: 30px">
-              <button style="
+              <button onclick="add_To_Cart(), location.href = 'cart.html';" style="
                     width: 150px;
                     border-radius: 4px;
                     background-color: #333;
@@ -756,6 +862,7 @@
         <!--Ratings and Reviews Section-->
 
         <div class="container" style="padding: 40px">
+          <p style="font-size: larger; color: gray">Rating and Reviews</p>
           <div class="row">
             <div class="col-md-4 col-sm-12 border">
               <div class="d-flex" style="justify-content: center; margin-top: 30px">
@@ -834,6 +941,29 @@
             </div>
           </div>
         </div>
+
+        <!--rating section is here-->
+        <div class="container">
+          <div class="row">
+            <div class="col-2" style="padding-left:2%; padding-right:2%;">
+              <p style="color: gray; padding-top: 0%; font-size: large; border-right: solid 1px;">Customer Reviews</p>
+            </div>
+
+            <div class="col-8 d-flex">
+              <input id="review_Input"
+                style="border: none; border-bottom: solid 1px;padding-top: 0%; border-radius: 1px; margin-bottom: 2% ;"
+                type="email" class="form-control" id="" placeholder="Enter your reviews....">
+              <button onclick="addReview(), document.location.reload(true)" id="add_Review" type="button" class="btn"
+                style="border-radius: 1px; margin-bottom: 2%; color: white; background-color: #c7003d;">ADD</button>
+            </div>
+          </div>
+        </div>
+
+        <!--Here reviews are shown-->
+        <div id="comment_Section" class="container">
+
+        </div>
+
       </div>
     </div>
   </div>
