@@ -19,6 +19,7 @@
       var total = 0;
       count = 0;
       local_data.forEach(element => {
+        console.log("dsfsd",element.product_price)
         total += parseInt(element.product_price) * parseInt(element.product_quantitys);
         count += 1;
       })
@@ -137,12 +138,14 @@
 
         <div class="d-flex">
           <p style="color: gray;"><b>Total items in cart</p>
-          <span id="available_Items" style="border:solid 3px #3ddab4; width: 50px; display: inline-block; text-align: center; border-radius: 15px; margin-left: 15px;margin-bottom: 11px; margin-top: -2px;">Total Items</span>
+          <span id="available_Items"
+            style="border:solid 3px #3ddab4; width: 50px; display: inline-block; text-align: center; border-radius: 15px; margin-left: 15px;margin-bottom: 11px; margin-top: -2px;">Total
+            Items</span>
         </div>
-
-        <button type="button" class="btn form-control"
-          style="border-radius: 1px; margin-top: 10%; background-color: #e40046; color: white;">PROCEED TO CHECK
-          OUT</button>
+        <a href="proceed-to-checkout-page.html">
+          <button type="button" class="btn form-control"
+            style="border-radius: 1px; margin-top: 10%; background-color: #e40046; color: white;">PROCEED TO CHECK
+            OUT</button></a>
 
       </div>
     </div>
