@@ -239,10 +239,12 @@
               style="width: 100%; margin-top: 28px; height: 500px; object-fit:contain;"
             />`;
 
-            var review_Data = JSON.parse(localStorage.getItem("review_data"))
-            review_Data.forEach(element => {
-        if (product_id == element.product_id) {
-          document.getElementById("comment_Section").innerHTML += `<div class="row">
+      var review_Data = JSON.parse(localStorage.getItem("review_data"))
+      console.log("review-data", review_Data)
+      if (review_Data !== null) {
+        review_Data.forEach(element => {
+          if (product_id == element.product_id) {
+            document.getElementById("comment_Section").innerHTML += `<div class="row">
              <div class="col-1">
               <img style="height: 30%; padding-left: 56%;" src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-star-web-flaticons-lineal-color-flat-icons-5.png"/>
              </div>
@@ -254,25 +256,55 @@
                <p style="color: gray; font-size:small; padding-left: 10%;">Rima &nbsp;&nbsp;on <p style="color: gray; font-size:small; padding-left: 1%;">${date}</p> </p>
             </div>
            </div>`;
+          }
+        });
+      }
+
+      //Bread Crumb:----->
+      console.log("name is", details[0].product_description)
+      document.getElementById("span_4").innerHTML = details[0].product_description;
+
+      document.getElementById("span_3").innerHTML = details[0].product_name;
+
+      for (let i = 0; i < category_data.length; i++) {
+        if (category_data[i].cat_id == details[0].cat_id) {
+          console.log("cat-name", category_data[i].cat_name)
+          document.getElementById("span_1").innerHTML = category_data[i].cat_name;
         }
-      });
+      }
+
+      for (let i = 0; i <= subcategory_data.length; i++) {
+        if (subcategory_data[i].sub_cat_id == details[0].sub_cat_id) {
+          console.log("sub name", subcategory_data[i].sub_cat_name)
+          document.getElementById("span_2").innerHTML = subcategory_data[i].sub_cat_name;
+        }
+      }
+
+      // for (let i=0;i<=Product_data.length;i++){
+      //   if(Product_data[i].product_id == details[0].product_id){
+      //     console.log("name is", Product_data[i].product_description)
+      //     document.getElementById("span_3").innerHTML = Product_data[i].product_description;
+      //   }
+      // } 
+
 
       var local_data = JSON.parse(localStorage.getItem("cart_data"))
       var cart_length = local_data.length;
-      document.getElementById("showing_cartI").innerHTML += `${cart_length}` ;
+      document.getElementById("showing_cartI").innerHTML += `${cart_length}`;
 
     });
 
     function add_To_Cart() {
       console.log("dsdsdsd")
-
+      let quantity = document.getElementById("quantity_Select").value;
       const product_obj = {
         product_id: details[0].product_id,
         product_description: details[0].product_description,
         product_price: details[0].product_discount_price,
         product_img: details[0].product_img,
+        product_quantitys: quantity
       }
-      
+
       var local_data = JSON.parse(localStorage.getItem("cart_data"))
       var new_obj = local_data === null ? [] : local_data
       new_obj.push(product_obj)
@@ -295,9 +327,9 @@
 
     }
 
-    
+
     var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     console.log(today);
 
     
@@ -402,6 +434,22 @@
   </div>
   <div class="" style="background-color: #f7f7f7">
     <div class="container" style="padding-top: 50px">
+
+      <!--For bread crumb-->
+      <div class="row">
+        <div class="col" style="background-color: white;">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+              <li class="breadcrumb-item active" aria-current="page"><span id="span_1"></span></li>
+              <li class="breadcrumb-item active" aria-current="page"><span id="span_2"></span></li>
+              <li class="breadcrumb-item active" aria-current="page"><span id="span_3"></span></li>
+              <li class="breadcrumb-item active" aria-current="page"><span id="span_4"></span></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
       <div class="row" style="background-color: white">
         <!--Container having Image-->
         <div class="col-md-5 col-sm-12 mb-3" id="product_Replica"></div>
@@ -474,6 +522,22 @@
                 <p style="margin-left: 80px; font-size: 13px; color: gray">
                   (2)Offers Applicable on cart
                 </p>
+
+                <!--Quantity Selector-->
+                <div class="dropdown" style="margin-left: 80px;">
+                  <label for="" style="color: gray; font-size:small">Quantity</label>
+                  <select name="" id="quantity_Select" class="form-control" style="border-radius: 1px; color:gray; width: 80px;">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div>
+
               </div>
             </div>
             <div class="row">
@@ -482,6 +546,7 @@
                   RS 98,000
                 </h5>
                 <span class="pdpDiscount"><span id="pro_discount">18</span>%OFF</span>
+
               </div>
             </div>
           </div>

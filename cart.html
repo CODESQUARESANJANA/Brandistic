@@ -16,42 +16,34 @@
   <script>
     $(document).ready(function () {
       var local_data = JSON.parse(localStorage.getItem("cart_data"))
-      
       var total = 0;
       count = 0;
       local_data.forEach(element => {
-        total +=  parseInt( element.product_price);
+        total += parseInt(element.product_price) * parseInt(element.product_quantitys);
         count += 1;
       })
       console.log(count)
-
       document.getElementById("cart_Item_No").innerHTML += `${count}`;
 
       if (local_data !== null) {
         local_data.forEach(element => {
           document.getElementById("cart_details").innerHTML += `
         <div class="container" style="height:210px">
-        <div class="container shadow-sm p-3 mb-5 bg-body rounded" style="padding-top:2%; height: 210px;">
+        <div class="container  shadow-sm p-3 mb-5 bg-body rounded" style="padding-top:2%; height: 210px;">
           <div class="row" style= "height: 210px;">
             <div id="cart_Image" class="col-2" style:"text:center;">
               <img style="height:150px; width:12 0px; object-fit:cover" src="${element.product_img}"></img>
             </div>
 
-            <div class="col-3" style=" color: gray;" style= "height: 210px;">
+            <div class="col-10" style=" color: gray;" style= "height: 210px;">
                 <p>${element.product_description}</p>
-            </div>
-
-            <div class="col-3" style= "height: 210px;">
-                <p style="color:gray">Your Order</p>
-                <p style="color:gray; font-size: x-large;">Your Total: RS ${total}</p>
+                <p style="color:gray">Item Price</p>
                 <p>RS ${element.product_price}</p>
-                <p style="color:gray; font-size:small;">(Including delivery and other charges. View Cart for details)</p>
-            </div>
-
-            <div class="col-4 " style= "height: 210px;">
-              <button type="button" class="btn" style="border-radius: 1px; margin-top: 10%; background-color: #e40046; color: white;">PROCEED TO CHECK OUT</button>
-              <button type="button" class="btn" style="border-radius: 1px; margin-top: 10%; background-color: #333; color: white;">VIEW CART</button>
-            </div>
+                <div class="d-flex">
+                  <p>Item Quantity:</p>
+                  <p style="margin-left:7px">${element.product_quantitys}</p>
+                </div>
+            </div>      
           </div>
         </div>
       </div>
@@ -59,9 +51,11 @@
         `
         });
       }
-      
 
-      
+      document.getElementById("showing_Total_Price").innerHTML = `Your Total: RS ${total}`;
+      var cart_length = local_data.length;
+      document.getElementById("available_Items").innerHTML = cart_length;
+
     })
   </script>
 
@@ -129,10 +123,31 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-9">
+      <div id="cart_details">
 
-  <div id="cart_details">
+      </div>
+    </div>
+    <div class="col-3 p-3">
+      <div class="bg-white p-2">
+        <p style="color:gray; font-size: x-large;" id="showing_Total_Price"></p>
+        <p style="color:gray; font-size:small;">(Including delivery and other charges.PROCEED TO CHECKOUT for order
+          conformation)</p>
 
+        <div class="d-flex">
+          <p style="color: gray;"><b>Total items in cart</p>
+          <span id="available_Items" style="border:solid 3px #3ddab4; width: 50px; display: inline-block; text-align: center; border-radius: 15px; margin-left: 15px;margin-bottom: 11px; margin-top: -2px;">Total Items</span>
+        </div>
+
+        <button type="button" class="btn form-control"
+          style="border-radius: 1px; margin-top: 10%; background-color: #e40046; color: white;">PROCEED TO CHECK
+          OUT</button>
+
+      </div>
+    </div>
   </div>
+
 
   <!--Footer Section-->
   <div class="container-fluid" style="background-color: rgb(255, 255, 255)">
@@ -339,3 +354,10 @@
 </body>
 
 </html>
+
+<!--<div class="col-3" style= "height: 210px;">
+                <p style="color:gray">Your Order</p>
+                
+                <p>RS ${element.product_price}</p>
+                <p style="color:gray; font-size:small;">(Including delivery and other charges. View Cart for details)</p>
+            </div>-->
